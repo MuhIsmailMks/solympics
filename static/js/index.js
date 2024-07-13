@@ -31,16 +31,15 @@ let x = setInterval(function() {
 }, 1000);
 
 
-
 // animation scroll effect
 // controller ScrollMagic
 let controller = new ScrollMagic.Controller();
 const animations = [
-    { selector: ".slideshow_container", duration: 2000, x: 200 },  
-    { selector: ".syrenge", duration: 4000, x: -100 },  
-  ];
-  
-  
+    { selector: ".slideshow_container", duration: 2000, x: 200},  
+    { selector: ".syrenge", duration: 4000, x: -100},  
+    { selector: ".trackim", duration: 3000, rotate: 45 },  
+];
+
 function adjustXValue() {
     const screenWidth = window.innerWidth;
     if (screenWidth > 1200) { 
@@ -51,32 +50,34 @@ function adjustXValue() {
         if (animation.hasOwnProperty('y')) { 
           animation.y = animation.y * 2;
         } 
+        if (animation.hasOwnProperty('rotate')) {
+          animation.rotate = animation.rotate * 1; 
+        }
       });
     }
 }
-  
-  adjustXValue();
-  window.addEventListener('resize', adjustXValue);
-  
-  animations.forEach(animation => { 
-    var tweenParams = { duration: 300, x: animation.x };
+
+adjustXValue();
+window.addEventListener('resize', adjustXValue);
+
+animations.forEach(animation => { 
+    var tweenParams = { duration: 300 };
     if (animation.hasOwnProperty('x')) {
       tweenParams.x = animation.x;
     }
     if (animation.hasOwnProperty('y')) {
       tweenParams.y = animation.y;
-    } 
+    }
+    if (animation.hasOwnProperty('rotate')) {
+      tweenParams.rotate = animation.rotate;
+    }
     
     var tween = gsap.to(animation.selector, tweenParams);
-  
+
     var scene = new ScrollMagic.Scene({
       triggerElement: animation.selector,
       duration: animation.duration
     })
     .setTween(tween)
     .addTo(controller);
-  });
-  
-  
-  
-  
+});
