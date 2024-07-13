@@ -401,7 +401,7 @@ button:hover {
   background-image: url(../media/solscan.3a6c4fc03a98684fb6dc.svg);
 }
 [data-ico="add"]:before {
-  background-image: url(../media/flower2.17c319a809359357e541.webp);
+  background-image: url(../media/flower2.png);
 }
 .navicons {
   display: block;
@@ -3291,7 +3291,7 @@ a:hover {
 }
 .alert .speech {
   align-items: center;
-  background-image: url(../media/speechcloud.f19b0c682c81eed6c90e.webp);
+  background-image: url(../media/speechcloud.png);
   display: flex;
   padding: 30px 45px;
   position: relative;
@@ -3303,7 +3303,7 @@ a:hover {
   background-size: 100% 100%;
 }
 .alert .speech:before {
-  background-image: url(../media/directional.fc8b38f019abd29e8ecf.webp);
+  background-image: url(../media/directional.png);
   content: "";
   display: block;
   height: 35px;
