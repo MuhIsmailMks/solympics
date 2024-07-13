@@ -2107,7 +2107,7 @@ a:hover {
 }
 .spinner {
   animation: spinner 6s linear infinite;
-  background-image: url(../media/spinner.ef8fd7b36ede6e38e27b.svg);
+  background-image: url(../media/spinner.png);
   background-repeat: no-repeat;
   background-size: 100%;
   display: block;
