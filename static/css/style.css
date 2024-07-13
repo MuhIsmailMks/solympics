@@ -756,7 +756,7 @@ body {
 }
 .pattern:before {
   animation: patternbody 30s linear infinite;
-  background-image: url(../media/themepattern.0f3cc6bd51ec06e32dcf.svg);
+  background-image: url(../media/themepattern.png);
   background-repeat: no-repeat;
   background-size: cover;
   content: "";
@@ -844,7 +844,7 @@ a:hover {
   width: 32px;
 }
 .socblock [data-ico="tg"]:before {
-  background-image: url(../media/tg-col.d995d60a54ae2b176e62.svg);
+  background-image: url(../media/tg-col.svg);
 }
 .socblock a {
   align-items: center;
@@ -2943,7 +2943,7 @@ a:hover {
   margin-left: calc(var(--gutter) / 3);
 }
 [data-ico="clipboard"]:before {
-  background-image: url(../media/clipboard.829934f0bff20c8301a7.svg);
+  background-image: url(../media/clipboard.svg);
 }
 .clipboard {
   align-items: center;
