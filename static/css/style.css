@@ -2984,6 +2984,7 @@ a:hover {
   position: absolute;
   top: 50%;
   transform: translate(-50%, -50%);
+  display:none;
 }
 @media (max-width: 768px) {
   .clipboard .reduced {

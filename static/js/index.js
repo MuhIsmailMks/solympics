@@ -30,6 +30,31 @@ let x = setInterval(function() {
 
 }, 1000);
 
+// copy button
+const copybtns = document.querySelectorAll(".contractCopy");
+    
+copybtns.forEach(copybtn => {
+    copybtn.addEventListener("click", function() { 
+    let message = copybtn.querySelector('.message');
+    let intervalId;
+        let addressText = document.querySelector(".value").getAttribute('value');
+        message.style.display='block';
+
+        if (intervalId) {  
+            clearInterval(intervalId);
+        }
+
+        intervalId = setInterval(() => {
+            clearInterval(intervalId);  
+            message.style.display='none';
+        }, 1000);
+
+        navigator.clipboard.writeText(addressText);
+    }); 
+
+})
+
+
 
 // animation scroll effect
 // controller ScrollMagic
