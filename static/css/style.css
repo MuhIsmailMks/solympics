@@ -756,7 +756,7 @@ body {
 }
 .pattern:before {
   animation: patternbody 30s linear infinite;
-  background-image: url(../media/themepattern.png);
+  background-image: url(../media/themepattern.svg);
   background-repeat: no-repeat;
   background-size: cover;
   content: "";
