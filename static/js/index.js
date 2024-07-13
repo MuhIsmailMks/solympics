@@ -11,6 +11,26 @@ closeBtn.addEventListener('click', () =>{
 });
 
 
+// times
+const initialCountDownDate = new Date("jun 20, 2024 00:00:00").getTime();
+ 
+let x = setInterval(function() {
+ 
+  let now = new Date().getTime();
+   
+  let distance = now - initialCountDownDate;
+ 
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+ 
+  document.getElementById("day").innerHTML = (days + 1) + " days"
+  document.getElementById("countdown_times").innerHTML = hours + "H "+ minutes + "M " + seconds + "S";
+
+}, 1000);
+
+
 
 // animation scroll effect
 // controller ScrollMagic
