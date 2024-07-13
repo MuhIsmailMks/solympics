@@ -1838,6 +1838,9 @@ a:hover {
   width: calc(100% + var(--global-padding));
   z-index: -1;
 }
+.syrenge div{
+  transform: translateX(9vw) translateY(5.59746vh) rotate(0deg);
+}
 .syrenge img {
   width: 100%;
 }
@@ -3124,6 +3127,9 @@ a:hover {
 @media (max-width: 1023px) {
   #promo .socialblocks {
     margin-bottom: var(--v-medium);
+  }
+  .syrenge div{
+    transform: translateX(15vw) translateY(5.59746vh) rotate(0deg);
   }
 }
 @media (min-width: 1024px) {
