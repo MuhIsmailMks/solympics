@@ -383,22 +383,22 @@ button:hover {
   width: 100%;
 }
 [data-ico="tg"]:before {
-  background-image: url(../media/tg.9b7d11a8a4b67ffc7ba8.svg);
+  background-image: url(../media/tg.svg);
 }
 [data-ico="tw"]:before {
-  background-image: url(../media/tw.96215edc51fb33ec6753.svg);
+  background-image: url(../media/tw.svg);
 }
 [data-ico="etherscan"]:before {
-  background-image: url(../media/etherscan.4098e098d46cd571466e.svg);
+  background-image: url(../media/etherscan.svg);
 }
 [data-ico="dextools"]:before {
-  background-image: url(../media/dextools.fe8b3e97fa249f9e98b7.svg);
+  background-image: url(../media/dextools.svg);
 }
 [data-ico="dexscreener"]:before {
-  background-image: url(../media/dexscreener.5e3aa475c6a1996f72e8.svg);
+  background-image: url(../media/dexscreener.svg);
 }
 [data-ico="solscan"]:before {
-  background-image: url(../media/solscan.3a6c4fc03a98684fb6dc.svg);
+  background-image: url(../media/solscan.svg);
 }
 [data-ico="add"]:before {
   background-image: url(../media/flower2.png);
