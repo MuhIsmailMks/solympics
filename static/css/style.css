@@ -1710,14 +1710,14 @@ a:hover {
   animation: bounce 2s ease infinite;
   left: 16%;
   top: 10%;
-  width: 14.4%;
+  width: 19.4%;
   z-index: 2;
 }
 .podium {
   animation: wiggle 2s ease infinite;
   right: 7%;
   top: 11.5%;
-  width: 12.4%;
+  width: 19.4%;
 }
 .ball,
 .podium,
@@ -2426,8 +2426,8 @@ a:hover {
 }
 .explosion .star {
   animation: explosion 60s linear infinite;
-  transform: translate(-50%, -50%) scale(3);
-  width: 100%;
+  transform: translate(-50%, -100%) scale(3);
+  width: 60%;
 }
 .explosion .fingers {
   transform: translate(-50%, -50%);
@@ -2911,7 +2911,7 @@ a:hover {
     width: calc(20% + 5px);
   }
   .explosion .fingers {
-    width: 33%;
+    width: 90%;
   }
   .explosion .rotator {
     margin-top: 25px;
