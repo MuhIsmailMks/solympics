@@ -695,8 +695,8 @@ body {
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
 }
 * {
-  scrollbar-color: unset !important;
-  scrollbar-width: none !important;
+  /* scrollbar-color: unset !important;
+  scrollbar-width: none !important; */
 }
 #root {
   margin-left: auto;
@@ -4157,9 +4157,15 @@ a:hover {
 .highlights .highlight {
   margin-bottom: var(--v-small);
 }
+
 .highlights .highlight section {
   margin-left: calc(54px + var(--gutter) / 2);
 }
+
+.highlights .highlight section{
+  display:none;
+}
+
 .highlights button {
   align-items: center;
   display: flex;
@@ -4214,6 +4220,9 @@ a:hover {
 }
 .highlights .highlight.active .circle span:after {
   transform: translateX(calc(100% + 2px));
+}
+.highlights .highlight.active section{
+  display:block;
 }
 #faq .circle {
   align-items: center;

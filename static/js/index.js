@@ -106,3 +106,28 @@ animations.forEach(animation => {
     .setTween(tween)
     .addTo(controller);
 });
+
+
+
+// question
+const faqs = document.querySelectorAll('.highlight'); 
+faqs.forEach(faq => {
+    faq.addEventListener('click',() => { 
+
+ 
+
+        if (!faq.classList.contains('active')) {
+            faqs.forEach(faq => { 
+                faq.classList.remove('active');
+            });
+            faq.classList.add('active');
+
+            
+        } else {
+            faq.classList.remove('active'); 
+        }
+
+       
+    });
+});
+ 
