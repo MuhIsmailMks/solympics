@@ -1,498 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 </head>
 <body>
-
-    <style>
-        .texture::after{
-            content: "";
-            position: fixed;
-
-            z-index: 999;
-            width: 30%;
-            height: 100vh;
-
-            rotate: 30deg;
-
-            left: -20%;
-            top: -20%;
-
-            background: linear-gradient(87.78deg, rgba(255, 255, 255, 0) -1.86%, #FFFFFF 49.5%, rgba(255, 255, 255, 0) 95.97%);
-
-            animation: gradientAnimation 1s infinite linear;
-        }
-
-        @keyframes gradientAnimation {
-            0%{
-                right: -30%;
-            }
-            100%{
-                right: 30%;
-            }
-        }
-
-    </style>
-
-    <section id="roadmap">
-        <div class="grid-x align-center">
-          <div class="cell-6 stickyside">
-            <figure>
-              <img
-                loading="lazy"
-                src="./static/media/roadmap.png"
-                width="1000"
-                height="1000"
-                alt="SOLYMPICS"
-              />
-            </figure>
-          </div>
-          <div class="cell-6 stages">
-            <section class="roadmap-phase">
-              <div class="marquee bordered marquee-left">
-                <div class="marquee-el" style="animation-duration: 25s">
-                  <p>
-                    <span>PHASE 1</span>&nbsp;&nbsp;<span>PHASE 1</span
-                    >&nbsp;&nbsp;<span>PHASE 1</span>&nbsp;&nbsp;<span
-                      >PHASE 1</span
-                    >&nbsp;&nbsp;<span>PHASE 1</span>&nbsp;&nbsp;<span
-                      >PHASE 1</span
-                    >&nbsp;&nbsp;<span>PHASE 1</span>&nbsp;&nbsp;<span
-                      >PHASE 1</span
-                    >&nbsp;&nbsp;<span>PHASE 1</span>&nbsp;&nbsp;<span
-                      >PHASE 1</span
-                    >&nbsp;&nbsp;<span>PHASE 1</span>&nbsp;&nbsp;<span
-                      >PHASE 1</span
-                    >&nbsp;&nbsp;<span>PHASE 1</span>&nbsp;&nbsp;<span
-                      >PHASE 1</span
-                    >&nbsp;&nbsp;<span>PHASE 1</span>&nbsp;&nbsp;<span
-                      >PHASE 1</span
-                    >&nbsp;&nbsp;<span>PHASE 1</span>&nbsp;&nbsp;<span
-                      >PHASE 1</span
-                    >&nbsp;&nbsp;
-                  </p>
-                </div>
-                <div class="marquee-el" style="animation-duration: 25s">
-                  <p>
-                    <span>PHASE 1</span>&nbsp;&nbsp;<span>PHASE 1</span
-                    >&nbsp;&nbsp;<span>PHASE 1</span>&nbsp;&nbsp;<span
-                      >PHASE 1</span
-                    >&nbsp;&nbsp;<span>PHASE 1</span>&nbsp;&nbsp;<span
-                      >PHASE 1</span
-                    >&nbsp;&nbsp;<span>PHASE 1</span>&nbsp;&nbsp;<span
-                      >PHASE 1</span
-                    >&nbsp;&nbsp;<span>PHASE 1</span>&nbsp;&nbsp;<span
-                      >PHASE 1</span
-                    >&nbsp;&nbsp;<span>PHASE 1</span>&nbsp;&nbsp;<span
-                      >PHASE 1</span
-                    >&nbsp;&nbsp;<span>PHASE 1</span>&nbsp;&nbsp;<span
-                      >PHASE 1</span
-                    >&nbsp;&nbsp;<span>PHASE 1</span>&nbsp;&nbsp;<span
-                      >PHASE 1</span
-                    >&nbsp;&nbsp;<span>PHASE 1</span>&nbsp;&nbsp;<span
-                      >PHASE 1</span
-                    >&nbsp;&nbsp;
-                  </p>
-                </div>
-              </div>
-            </section>
-            <article>
-              <div class="grid-x">
-                <div class="cell-6">
-                  <h3>BUST UP THE MEME TORCH</h3>
-                  <h5>IN PROGRESS</h5>
-                </div>
-                <div class="cell-6">
-                  <ul data-list="true">
-                    <li>
-                      Grand Opening Memes Drop: Unleash the Solympics! Dank up
-                      those memes and let the games begin!
-                    </li>
-                    <li>
-                      Airdrop Dash: Sprint to the finish line and grab your share
-                      of Solympics gold!
-                    </li>
-                    <li>
-                      Round Up the TG: Fill the stadiums with athletically built
-                      chads ready to smash through the hurdles!
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </article>
-            <article>
-              <figure>
-                <ul class="img-list i1">
-                  <li class="borderless">
-                    <img
-                      src="./static/media/ui-widget.png"
-                      alt="CREATE A MEME"
-                      loading="lazy"
-                      width="826"
-                      height="616"
-                    />
-                  </li>
-                </ul>
-              </figure>
-              <div class="grid-x">
-                <div class="cell-6">
-                  <h3>MEME CULTURE</h3>
-                  <h5>IN PROGRESS</h5>
-                </div>
-                <div class="cell-6">
-                  <p>
-                    Spread those vibes and support Solympics culture with our meme
-                    widget! Game time, let the dankest memes win!
-                  </p>
-                </div>
-              </div>
-              <footer>
-                <a
-                  class="btn primary small full"
-                  title="CREATE A MEME"
-                  rel="noreferrer"
-                  href="/makememes"
-                  ><span>CREATE A MEME</span></a
-                >
-              </footer>
-            </article>
-            <article>
-              <figure>
-                <ul class="img-list i7">
-                  <li>
-                    <img
-                      src="./static/media/ticket-sapmple1.png"
-                      loading="lazy"
-                      width="111"
-                      height="111"
-                      alt="SOLYMPICS LOTTERY TICKET"
-                    />
-                  </li>
-                  <li>
-                    <img
-                      src="./static/media/ticket-sapmple2.png"
-                      loading="lazy"
-                      width="111"
-                      height="111"
-                      alt="SOLYMPICS LOTTERY TICKET"
-                    />
-                  </li>
-                  <li>
-                    <img
-                      src="./static/media/ticket-sapmple3.png"
-                      loading="lazy"
-                      width="111"
-                      height="111"
-                      alt="SOLYMPICS LOTTERY TICKET"
-                    />
-                  </li>
-                  <li>
-                    <img
-                      src="./static/media/ticket-sapmple4.png"
-                      loading="lazy"
-                      width="111"
-                      height="111"
-                      alt="SOLYMPICS LOTTERY TICKET"
-                    />
-                  </li>
-                  <li>
-                    <img
-                      src="./static/media/ticket-sapmple5.webp"
-                      loading="lazy"
-                      width="111"
-                      height="111"
-                      alt="SOLYMPICS LOTTERY TICKET"
-                    />
-                  </li>
-                  <li>
-                    <img
-                      src="./static/media/ticket-sapmple6.png"
-                      loading="lazy"
-                      width="111"
-                      height="111"
-                      alt="SOLYMPICS LOTTERY TICKET"
-                    />
-                  </li>
-                  <li>
-                    <img
-                      src="./static/media/ticket-sapmple7.png"
-                      loading="lazy"
-                      width="111"
-                      height="111"
-                      alt="SOLYMPICS LOTTERY TICKET"
-                    />
-                  </li>
-                </ul>
-              </figure>
-              <div class="grid-x">
-                <div class="cell-6">
-                  <h3>SOLYMPICS LOTTERY TICKET NFT COLLECTION</h3>
-                  <h5>Mint - upcoming</h5>
-                </div>
-                <div class="cell-6">
-                  <p>
-                    1100 unique NFTs from 10 countries and 100 sports events. Mint
-                    or buy on OpenSea for a chance to win over $50k in prizes,
-                    including the golden NFT grand prize!
-                  </p>
-                </div>
-              </div>
-              <footer>
-                <a
-                  class="btn primary small full"
-                  href="#"
-                  target="_blank"
-                  title="SOLYMPICS MINT"
-                  rel="noreferrer"
-                  ><span>SOLYMPICS MINT</span></a
-                >
-              </footer>
-            </article>
-            <section class="roadmap-phase">
-              <div class="marquee bordered marquee-left">
-                <div class="marquee-el" style="animation-duration: 25s">
-                  <p>
-                    <span>PHASE 2</span>&nbsp;&nbsp;<span>PHASE 2</span
-                    >&nbsp;&nbsp;<span>PHASE 2</span>&nbsp;&nbsp;<span
-                      >PHASE 2</span
-                    >&nbsp;&nbsp;<span>PHASE 2</span>&nbsp;&nbsp;<span
-                      >PHASE 2</span
-                    >&nbsp;&nbsp;<span>PHASE 2</span>&nbsp;&nbsp;<span
-                      >PHASE 2</span
-                    >&nbsp;&nbsp;<span>PHASE 2</span>&nbsp;&nbsp;<span
-                      >PHASE 2</span
-                    >&nbsp;&nbsp;<span>PHASE 2</span>&nbsp;&nbsp;<span
-                      >PHASE 2</span
-                    >&nbsp;&nbsp;<span>PHASE 2</span>&nbsp;&nbsp;<span
-                      >PHASE 2</span
-                    >&nbsp;&nbsp;<span>PHASE 2</span>&nbsp;&nbsp;<span
-                      >PHASE 2</span
-                    >&nbsp;&nbsp;<span>PHASE 2</span>&nbsp;&nbsp;<span
-                      >PHASE 2</span
-                    >&nbsp;&nbsp;
-                  </p>
-                </div>
-                <div class="marquee-el" style="animation-duration: 25s">
-                  <p>
-                    <span>PHASE 2</span>&nbsp;&nbsp;<span>PHASE 2</span
-                    >&nbsp;&nbsp;<span>PHASE 2</span>&nbsp;&nbsp;<span
-                      >PHASE 2</span
-                    >&nbsp;&nbsp;<span>PHASE 2</span>&nbsp;&nbsp;<span
-                      >PHASE 2</span
-                    >&nbsp;&nbsp;<span>PHASE 2</span>&nbsp;&nbsp;<span
-                      >PHASE 2</span
-                    >&nbsp;&nbsp;<span>PHASE 2</span>&nbsp;&nbsp;<span
-                      >PHASE 2</span
-                    >&nbsp;&nbsp;<span>PHASE 2</span>&nbsp;&nbsp;<span
-                      >PHASE 2</span
-                    >&nbsp;&nbsp;<span>PHASE 2</span>&nbsp;&nbsp;<span
-                      >PHASE 2</span
-                    >&nbsp;&nbsp;<span>PHASE 2</span>&nbsp;&nbsp;<span
-                      >PHASE 2</span
-                    >&nbsp;&nbsp;<span>PHASE 2</span>&nbsp;&nbsp;<span
-                      >PHASE 2</span
-                    >&nbsp;&nbsp;
-                  </p>
-                </div>
-              </div>
-            </section>
-            <article>
-              <div class="grid-x">
-                <div class="cell-6">
-                  <h3>GOING FOR GOLD</h3>
-                  <h5>UPCOMING</h5>
-                </div>
-                <div class="cell-6">
-                  <p>
-                    Award the champs: Keep the energy high and the memes rolling.
-                    Stay active!
-                  </p>
-                </div>
-              </div>
-            </article>
-            <article>
-              <figure>
-                <ul class="img-list i2">
-                  <li>
-                    <img
-                      src="./static/media/tshirt1.png"
-                      alt="SOLYMPICS MERCH"
-                      loading="lazy"
-                      width="400"
-                      height="400"
-                    />
-                  </li>
-                  <li>
-                    <img
-                      src="./static/media/tshirt2.png"
-                      alt="SOLYMPICS MERCH"
-                      loading="lazy"
-                      width="400"
-                      height="400"
-                    />
-                  </li>
-                </ul>
-              </figure>
-              <div class="grid-x">
-                <div class="cell-6"><h3>CELEBRATION LAP</h3></div>
-                <div class="cell-6">
-                  <ul data-list="true">
-                    <li>
-                      Merch Drop: Release Solympics merch because every jay cat
-                      deserves a hoodie.
-                    </li>
-                    <li>
-                      Go Viral: Epic art, giveaways, and community love. Time to
-                      turn shit up!
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </article>
-            <section class="roadmap-phase">
-              <div class="marquee bordered marquee-left">
-                <div class="marquee-el" style="animation-duration: 25s">
-                  <p>
-                    <span>PHASE 3</span>&nbsp;&nbsp;<span>PHASE 3</span
-                    >&nbsp;&nbsp;<span>PHASE 3</span>&nbsp;&nbsp;<span
-                      >PHASE 3</span
-                    >&nbsp;&nbsp;<span>PHASE 3</span>&nbsp;&nbsp;<span
-                      >PHASE 3</span
-                    >&nbsp;&nbsp;<span>PHASE 3</span>&nbsp;&nbsp;<span
-                      >PHASE 3</span
-                    >&nbsp;&nbsp;<span>PHASE 3</span>&nbsp;&nbsp;<span
-                      >PHASE 3</span
-                    >&nbsp;&nbsp;<span>PHASE 3</span>&nbsp;&nbsp;<span
-                      >PHASE 3</span
-                    >&nbsp;&nbsp;<span>PHASE 3</span>&nbsp;&nbsp;<span
-                      >PHASE 3</span
-                    >&nbsp;&nbsp;<span>PHASE 3</span>&nbsp;&nbsp;<span
-                      >PHASE 3</span
-                    >&nbsp;&nbsp;<span>PHASE 3</span>&nbsp;&nbsp;<span
-                      >PHASE 3</span
-                    >&nbsp;&nbsp;
-                  </p>
-                </div>
-                <div class="marquee-el" style="animation-duration: 25s">
-                  <p>
-                    <span>PHASE 3</span>&nbsp;&nbsp;<span>PHASE 3</span
-                    >&nbsp;&nbsp;<span>PHASE 3</span>&nbsp;&nbsp;<span
-                      >PHASE 3</span
-                    >&nbsp;&nbsp;<span>PHASE 3</span>&nbsp;&nbsp;<span
-                      >PHASE 3</span
-                    >&nbsp;&nbsp;<span>PHASE 3</span>&nbsp;&nbsp;<span
-                      >PHASE 3</span
-                    >&nbsp;&nbsp;<span>PHASE 3</span>&nbsp;&nbsp;<span
-                      >PHASE 3</span
-                    >&nbsp;&nbsp;<span>PHASE 3</span>&nbsp;&nbsp;<span
-                      >PHASE 3</span
-                    >&nbsp;&nbsp;<span>PHASE 3</span>&nbsp;&nbsp;<span
-                      >PHASE 3</span
-                    >&nbsp;&nbsp;<span>PHASE 3</span>&nbsp;&nbsp;<span
-                      >PHASE 3</span
-                    >&nbsp;&nbsp;<span>PHASE 3</span>&nbsp;&nbsp;<span
-                      >PHASE 3</span
-                    >&nbsp;&nbsp;
-                  </p>
-                </div>
-              </div>
-            </section>
-            <article>
-              <figure>
-                <ul class="img-list i1">
-                  <li>
-                    <img
-                      src="./static/media/watchingTV-solympics.png"
-                      alt="SOLYMPICS MAINSTREAM"
-                      loading="lazy"
-                      width="800"
-                      height="800"
-                    />
-                  </li>
-                </ul>
-              </figure>
-              <div class="grid-x">
-                <div class="cell-6">
-                  <h3>
-                    OWN<br />
-                    THE SPACE
-                  </h3>
-                </div>
-                <div class="cell-6">
-                  <p>
-                    Keep growing and dominate the meme space with our Solympics
-                    branding culture and vibes!
-                  </p>
-                </div>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section id="memer" class="spaceless">
-        <div class="grid-x align-center">
-          <div class="heading text-center text-to-observe  in-view">
-            <h1 class="gradfill" data-text="CREATE A MEME">CREATE A MEME</h1>
+  
+  <style>
+    :root {
+  --primary: #feffe2;
+  --primary-rgb: 254, 255, 226;
+  --grey: #c9c9c9;
+  --negative: #3a055a;
+  --negative-rgb: 58, 5, 90;
+  --accent: #8858b0;
+  --h-accent: #d0a1ff;
+  --semi-accent: #5251ae;
+  --yellow: #fade41;
+  --andy-yellow: #f3c74c;
+  --red: #dd574e;
+  --pink: #fec9d1;
+  --blue: #22a1dd;
+  --teal: #4beab4;
+  --green: #6fc13c;
+  --chartreusse: #b1d559;
+  --orange: #ed965c;
+  --magenta: #ff6fa2;
+  --link: var(--negative);
+  --h-link: #340a4b;
+  --grad: linear-gradient(
+    90deg,
+    var(--magenta) 0%,
+    var(--blue) 50%,
+    var(--green) 100%
+  );
+  --h-grad: linear-gradient(
+    90deg,
+    var(--magenta) 0%,
+    var(--blue) 25%,
+    var(--green) 100%
+  );
+  --alert: #e17860;
+  --border: var(--negative);
+  --global-width: 1760px;
+  --global-p-width: 480px;
+  --global-padding: 20px;
+  --global-body-bg: #75d1ef;
+  --global-accent-bg: #ffc3f4;
+  --gutter: 10px;
+  --heading: "Gill", sans-serif;
+  --line-height: 1;
+  --globall-line-height: 1.4;
+  --reduced-line-height: 1.2;
+  --body: "Gill", sans-serif;
+  --h1: 15vw;
+  --h2: 7.8vw;
+  --h3: 9.3vw;
+  --h4: 26px;
+  --h5: 20px;
+  --h6: 16px;
+  --paragraph: 20px;
+  --small: 73%;
+  --rate: 0.85;
+  --small-radius: 4px;
+  --medium-radius: 15px;
+  --large-radius: 26.5px;
+  --v-small: 20px;
+  --v-medium: 50px;
+  --v-large: 80px;
+  --t-spacer: 11.5vh;
+  --btn-huge: 21px;
+  --btn-large: 21px;
+  --btn-small: 21px;
+  --btn-tiny: 16px;
+  --btn-radius: 4px;
+  --btn-padding: 20.83333px 41.66667px;
+  --btn-small-padding: 10.83333px 12.5px;
+  --btn-large-padding: 31.25px 41.66667px;
+  --btn-tiny-padding: 7.5px 11.66667px;
+}
+  </style>
+  
+  <section id="memer" class="spaceless">
+    <div class="grid-x align-center">
+      <div class="heading text-center text-to-observe  in-view">
+        <h1 class="gradfill" data-text="CREATE A MEME">CREATE A MEME</h1>
+        <p>
+          Support your country. Experience Solympics culture. Get ready for a
+          marathon run.
+          <a
+            href="https://twitter.com"
+            target="_blank"
+            title="#Solympics"
+            rel="noreferrer"
+            >#Solympics</a
+          >!
+        </p>
+      </div>
+    </div>
+  </section>
+  
+  <section id="generator">
+    <div class="grid-x align-center">
+      <div class="window big uploader" role="presentation" tabindex="0">
+        <aside class="pattern"></aside>
+        <input
+          type="file"
+          accept="image/jpeg,.jpg,.jpeg,image/png,.png"
+          tabindex="-1"
+          style="display: none"
+        />
+        <div class="uptext">
+          <div class="desc">
+            <img
+              class="uploadimg"
+              loading="lazy"
+              width="36"
+              height="36"
+              src="./static/media/upload.svg"
+              alt="Drag &amp; drop an image here, or click to select one"
+            />
             <p>
-              Support your country. Experience Solympics culture. Get ready for a
-              marathon run.
-              <a
-                href="https://twitter.com"
-                target="_blank"
-                title="#Solympics"
-                rel="noreferrer"
-                >#Solympics</a
-              >!
+              Drag &amp; drop an image here,<br />
+              or click to select one
+            </p>
+            <p>
+              <small>(Only *.jpeg and *.png images will be accepted)</small>
             </p>
           </div>
+          <img
+            class="sup-img"
+            loading="lazy"
+            width="766.96"
+            height="572.2"
+            src="./static/media/ui-widget.png"
+            alt="Drag &amp; drop an image here, or click to select one"
+          />
         </div>
-      </section>
-      
-      <section id="generator">
-        <div class="grid-x align-center">
-          <div class="window big uploader" role="presentation" tabindex="0">
-            <aside class="pattern"></aside>
-            <input
-              type="file"
-              accept="image/jpeg,.jpg,.jpeg,image/png,.png"
-              tabindex="-1"
-              style="display: none"
-            />
-            <div class="uptext">
-              <div class="desc">
-                <img
-                  class="uploadimg"
-                  loading="lazy"
-                  width="36"
-                  height="36"
-                  src="./static/media/upload.svg"
-                  alt="Drag &amp; drop an image here, or click to select one"
-                />
-                <p>
-                  Drag &amp; drop an image here,<br />
-                  or click to select one
-                </p>
-                <p>
-                  <small>(Only *.jpeg and *.png images will be accepted)</small>
-                </p>
-              </div>
-              <img
-                class="sup-img"
-                loading="lazy"
-                width="766.96"
-                height="572.2"
-                src="./static/media/ui-widget.png"
-                alt="Drag &amp; drop an image here, or click to select one"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
-undefined
+      </div>
+    </div>
+  </section>
 </body>
 </html>
