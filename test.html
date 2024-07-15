@@ -7,6 +7,36 @@
 </head>
 <body>
 
+    <style>
+        .texture::after{
+            content: "";
+            position: fixed;
+
+            z-index: 999;
+            width: 30%;
+            height: 100vh;
+
+            rotate: 30deg;
+
+            left: -20%;
+            top: -20%;
+
+            background: linear-gradient(87.78deg, rgba(255, 255, 255, 0) -1.86%, #FFFFFF 49.5%, rgba(255, 255, 255, 0) 95.97%);
+
+            animation: gradientAnimation 1s infinite linear;
+        }
+
+        @keyframes gradientAnimation {
+            0%{
+                right: -30%;
+            }
+            100%{
+                right: 30%;
+            }
+        }
+
+    </style>
+
     <section id="roadmap">
         <div class="grid-x align-center">
           <div class="cell-6 stickyside">
