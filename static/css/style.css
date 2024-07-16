@@ -1361,17 +1361,13 @@ a:hover {
   transition: all 0.3s ease-in-out;
 }
 .quicklinks {
-  background: var(--grad);
-  border: 2px solid var(--negative);
-  border-radius: var(--btn-radius);
-  box-shadow: 0 0 0 0 var(--negative);
-  overflow: hidden;
-  padding: var(--btn-small-padding);
   position: relative;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out; 
+  display:flex;
+  gap:1rem;
 }
-.quicklinks:after,
-.quicklinks:before {
+.quicklinks .socials:after,
+.quicklinks .socials:before {
   border-radius: 50%;
   content: "";
   display: block;
@@ -1379,45 +1375,54 @@ a:hover {
   padding-bottom: 150%;
   position: absolute;
   top: -100%;
-  transform: translateY(100%);
+  transform: translateY(150%);
   transition: all 0.2s ease-in-out;
   width: 200%;
 }
-.quicklinks:before {
+.quicklinks .socials:before {
   background-color: var(--magenta);
   z-index: 2;
 }
-.quicklinks:after {
+.quicklinks .socials:after {
   background-color: var(--negative);
   z-index: 1;
 }
-.quicklinks:hover {
+.quicklinks .socials:hover {
   box-shadow: -5px 6px 0 0 var(--negative);
   transition: all 0.3s ease-in-out;
 }
-.quicklinks:hover:after,
-.quicklinks:hover:before {
-  transform: translateY(0);
-}
-.quicklinks:hover:before {
+.quicklinks .socials:hover:after,
+.quicklinks .socials:hover:before {
+  transform: translateY(50%);
+} 
+.quicklinks .socials:hover:before {
   transition: all 0.6s ease-in-out;
 }
-.quicklinks:hover:after {
+.quicklinks .socials:hover:after {
   transform: translateY(0);
   transition: all 0.5s ease-in-out;
 }
-.quicklinks .socials {
-  gap: 10px;
+.quicklinks .socials { 
+  background: var(--grad);
   position: relative;
   z-index: 3;
+  border: 2px solid var(--negative);
+  border-radius: 20px;
+  box-shadow: 0 0 0 0 var(--negative);
+  overflow: hidden;
+  padding: 1rem;
 }
-.quicklinks .socials > a {
+.quicklinks .socials i{
+  position:relative;
+  z-index:9;
+}
+.quicklinks .socials {
   transition: all 0.2s ease-in-out;
 }
-.quicklinks .socials > a:hover {
-  opacity: 0.9;
+.quicklinks .socials:hover {
+  /* opacity: 0.9;
   transform: scale(0.87) rotate(2deg);
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; */
 }
 [data-close] {
   background: var(--grad);
