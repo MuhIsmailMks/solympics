@@ -6,6 +6,14 @@ menuBtn.addEventListener('click', () =>{
     subMenu.classList.add('active')
 });
 
+subMenu.addEventListener('click', (e) =>{
+   let targ = e.target;
+
+   if (targ.tagName.toLowerCase() === 'a') { 
+    subMenu.classList.remove('active')
+    }  
+});
+
 closeBtn.addEventListener('click', () =>{ 
     subMenu.classList.remove('active')
 });
