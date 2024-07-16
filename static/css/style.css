@@ -128,8 +128,7 @@ q {
   --yellow: #fade41;
   --andy-yellow: #f3c74c;
   --red: #dd574e;
-  --pink: #E6E6E6;
-  /* --pink: #fec9d1; */
+  --pink: #E6E6E6; 
   --blue1: #FFE17B;
   --blue: #22a1dd;
   --yellow_center_gradient: #facd03;
@@ -139,7 +138,8 @@ q {
   --orange: #ed965c;
   --orange_primary: #d34513;
   --yellor_primary: #ffdf01;
-  --magenta: #ff6fa2;
+  --magenta: #FFBF5F;
+  /* --magenta: #ff6fa2; */
   /* background: linear-gradient(94.67deg, #FFDF01 4.83%, #FACD03 36.71%, #D34513 123.93%);
  */
   --link: var(--negative);
