@@ -70,7 +70,7 @@ let controller = new ScrollMagic.Controller();
 const animations = [
     { selector: ".slideshow_container", duration: 2000, x: 200},  
     { selector: ".syrenge", duration: 4000, x: -100},  
-    { selector: ".trackim", duration: 3000, rotate: 45 },  
+    // { selector: ".trackim", duration: 3000, rotate: 45 },  
 ];
 
 function adjustXValue() {

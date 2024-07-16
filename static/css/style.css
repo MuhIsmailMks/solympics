@@ -3850,26 +3850,7 @@ a:hover {
 }
 #tokenomics .gradfill:after {
   text-shadow: -3px 3.5px 0 var(--negative);
-}
-.track {
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
-}
-.track .wrapper {
-  pointer-events: none;
-  position: relative;
-}
-.track .wrapper img {
-  transform: scale(1.5);
-}
-.track .wrapper .btn {
-  left: 50%;
-  pointer-events: auto;
-  position: absolute;
-  top: 50%;
-  transform: translate(-50%, -50%);
-}
+} 
 .tokdata {
   line-height: 1;
   text-transform: uppercase;
@@ -3891,16 +3872,7 @@ a:hover {
     font-size: 16.2vw;
   }
 }
-@media (max-width: 1023px) {
-  .track {
-    flex-flow: row wrap;
-  }
-  .track .trackim {
-    margin-left: 10%;
-    margin-top: var(--v-small);
-    order: 1;
-    width: 80%;
-  }
+@media (max-width: 1023px) { 
   #tokenomics h2 {
     margin-top: var(--v-medium);
   }
@@ -3911,20 +3883,12 @@ a:hover {
   }
   #tokenomics .gradfill:after {
     text-shadow: -6px 6.5px 0 var(--negative);
-  }
-  .track .trackim {
-    padding-left: 7%;
-    padding-right: 7%;
-  }
+  } 
 }
 @media (min-width: 1441px) {
   #tokenomics h2 {
     font-size: 16.5vw;
-  }
-  .track .trackim {
-    padding-left: 0;
-    padding-right: 0;
-  }
+  } 
 }
 @media (min-width: 1921px) {
   #tokenomics h2 {
@@ -4133,6 +4097,9 @@ a:hover {
 }
 .highlights .highlight.active section{
   display:block;
+}
+#faq .grid-x{
+  align-items:center;
 }
 #faq .circle {
   align-items: center;
@@ -4377,4 +4344,26 @@ a:hover {
   position: absolute;
   top: 0;
   width: 100%;
+}
+
+
+
+/* new update */
+@media (max-width: 600px){
+  .quicklinks .socials{
+    padding:.55rem;
+    border-radius:10px;
+  }
+
+  .navigation .logo{
+    display:flex;
+    justify-content:center;
+  }
+  .navigation .logo:before{
+    background-image: url(../media/logo.png); 
+    background-size: contain; 
+    height: 100%; 
+    width: 80%;
+   }
+  
 }

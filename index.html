@@ -9,6 +9,82 @@
 </head>
 <body>
 
+  <style>
+ 
+
+       #faq .highlights {
+          display: flex;
+          flex-direction: column;
+          justify-content: end;
+          align-items: end;
+          padding-right: 2rem;
+
+          color: white;
+        }
+
+        .cell-6.mtxt{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .faq_image{
+          position: absolute;
+          max-width: 100%;
+          width: 50vw;
+
+          left: -10vw;
+        }
+
+    .highlights .highlight button{
+      display: flex;
+      justify-content: end;
+      width: 100%;
+
+      gap: 2rem;
+    }
+
+    .highlights .btn{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 200px ;
+      height: 70px ;
+      margin-bottom: 2rem;
+      overflow: hidden;
+      background-color: red;
+
+      border-radius: 20px;
+      font-size: 30px;
+      padding: 0;
+    } 
+
+    @media screen and (max-width:1024px) {
+      .highlights .highlight button{ 
+        justify-content: center;  
+        gap: 2rem;
+      } 
+      
+      #faq .highlights { 
+          align-items: center;
+          padding-right: 0px; 
+        }
+
+        .highlights .highlight section{
+          margin-left: 0;
+        }
+
+        .faq_image{
+          position: absolute;
+          max-width: 100%;
+          width: 50vw;
+
+          left: -10vw;
+        }
+    }
+
+  </style>
+
     <main id="root">
         <aside class="texture"></aside>
 
@@ -1139,271 +1215,21 @@
             href="#"
             target="_black"
             rel="noreferrer"
-            ><span>SNIBBU MINT</span></a
-          >
+            ><span>SNIBBU MINT</span></a  >
         </section>
-
-        <!-- <section class="coloured fw spaceless ">
-          <section id="tokenomics" class="spaceless" data-theme="purple">
-            <div class="fw spaceless">
-              <div class="marquee bordered mutated marquee-left">
-                <div class="marquee-el" style="animation-duration: 75s">
-                  <p>
-                    <span>LET THE BLOCKCHAIN GAMES BEGIN - SOLYMPICS!</span
-                    >&nbsp;&nbsp;<span
-                      >LET THE BLOCKCHAIN GAMES BEGIN - SOLYMPICS!</span
-                    >&nbsp;&nbsp;<span
-                      >LET THE BLOCKCHAIN GAMES BEGIN - SOLYMPICS!</span
-                    >&nbsp;&nbsp;<span
-                      >LET THE BLOCKCHAIN GAMES BEGIN - SOLYMPICS!</span
-                    >&nbsp;&nbsp;<span
-                      >LET THE BLOCKCHAIN GAMES BEGIN - SOLYMPICS!</span
-                    >&nbsp;&nbsp;<span
-                      >LET THE BLOCKCHAIN GAMES BEGIN - SOLYMPICS!</span
-                    >&nbsp;&nbsp;<span
-                      >LET THE BLOCKCHAIN GAMES BEGIN - SOLYMPICS!</span
-                    >&nbsp;&nbsp;<span
-                      >LET THE BLOCKCHAIN GAMES BEGIN - SOLYMPICS!</span
-                    >&nbsp;&nbsp;<span
-                      >LET THE BLOCKCHAIN GAMES BEGIN - SOLYMPICS!</span
-                    >&nbsp;&nbsp;<span
-                      >LET THE BLOCKCHAIN GAMES BEGIN - SOLYMPICS!</span
-                    >&nbsp;&nbsp;<span
-                      >LET THE BLOCKCHAIN GAMES BEGIN - SOLYMPICS!</span
-                    >&nbsp;&nbsp;<span
-                      >LET THE BLOCKCHAIN GAMES BEGIN - SOLYMPICS!</span
-                    >&nbsp;&nbsp;<span
-                      >LET THE BLOCKCHAIN GAMES BEGIN - SOLYMPICS!</span
-                    >&nbsp;&nbsp;<span
-                      >LET THE BLOCKCHAIN GAMES BEGIN - SOLYMPICS!</span
-                    >&nbsp;&nbsp;<span
-                      >LET THE BLOCKCHAIN GAMES BEGIN - SOLYMPICS!</span
-                    >&nbsp;&nbsp;<span
-                      >LET THE BLOCKCHAIN GAMES BEGIN - SOLYMPICS!</span
-                    >&nbsp;&nbsp;<span
-                      >LET THE BLOCKCHAIN GAMES BEGIN - SOLYMPICS!</span
-                    >&nbsp;&nbsp;<span
-                      >LET THE BLOCKCHAIN GAMES BEGIN - SOLYMPICS!</span
-                    >&nbsp;&nbsp;
-                  </p>
-                </div>
-                <div class="marquee-el" style="animation-duration: 75s">
-                  <p>
-                    <span>LET THE BLOCKCHAIN GAMES BEGIN - SOLYMPICS!</span
-                    >&nbsp;&nbsp;<span
-                      >LET THE BLOCKCHAIN GAMES BEGIN - SOLYMPICS!</span
-                    >&nbsp;&nbsp;<span
-                      >LET THE BLOCKCHAIN GAMES BEGIN - SOLYMPICS!</span
-                    >&nbsp;&nbsp;<span
-                      >LET THE BLOCKCHAIN GAMES BEGIN - SOLYMPICS!</span
-                    >&nbsp;&nbsp;<span
-                      >LET THE BLOCKCHAIN GAMES BEGIN - SOLYMPICS!</span
-                    >&nbsp;&nbsp;<span
-                      >LET THE BLOCKCHAIN GAMES BEGIN - SOLYMPICS!</span
-                    >&nbsp;&nbsp;<span
-                      >LET THE BLOCKCHAIN GAMES BEGIN - SOLYMPICS!</span
-                    >&nbsp;&nbsp;<span
-                      >LET THE BLOCKCHAIN GAMES BEGIN - SOLYMPICS!</span
-                    >&nbsp;&nbsp;<span
-                      >LET THE BLOCKCHAIN GAMES BEGIN - SOLYMPICS!</span
-                    >&nbsp;&nbsp;<span
-                      >LET THE BLOCKCHAIN GAMES BEGIN - SOLYMPICS!</span
-                    >&nbsp;&nbsp;<span
-                      >LET THE BLOCKCHAIN GAMES BEGIN - SOLYMPICS!</span
-                    >&nbsp;&nbsp;<span
-                      >LET THE BLOCKCHAIN GAMES BEGIN - SOLYMPICS!</span
-                    >&nbsp;&nbsp;<span
-                      >LET THE BLOCKCHAIN GAMES BEGIN - SOLYMPICS!</span
-                    >&nbsp;&nbsp;<span
-                      >LET THE BLOCKCHAIN GAMES BEGIN - SOLYMPICS!</span
-                    >&nbsp;&nbsp;<span
-                      >LET THE BLOCKCHAIN GAMES BEGIN - SOLYMPICS!</span
-                    >&nbsp;&nbsp;<span
-                      >LET THE BLOCKCHAIN GAMES BEGIN - SOLYMPICS!</span
-                    >&nbsp;&nbsp;<span
-                      >LET THE BLOCKCHAIN GAMES BEGIN - SOLYMPICS!</span
-                    >&nbsp;&nbsp;<span
-                      >LET THE BLOCKCHAIN GAMES BEGIN - SOLYMPICS!</span
-                    >&nbsp;&nbsp;
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="grid-x spaceless">
-              <div class="cell-12 text-to-observe in-view">
-                <h2 class="gradfill" data-text="TOKENOMICS &amp; ROADMAP">
-                  TOKENOMICS &amp; ROADMAP
-                </h2>
-              </div>
-            </div>
-            <figure class="track">
-              <ul class="tokdata">
-                <li><small>Buy Tax</small><span>0%</span></li>
-                <li><small>Liquidity</small><span>Burned</span></li>
-              </ul>
-              <div class="trackim">
-                <div style="will-change: transform; transform: rotate(-10deg)">
-                  <div class="wrapper">
-                    <img
-                      loading="lazy"
-                      src="./static/media/tokenomics.png"
-                      width="962"
-                      height="962"
-                      alt="SNIBBU"
-                    /><a
-                      href="#radium"
-                      class="btn primary small"
-                      target="_blank"
-                      title="APE SOLYMPICS"
-                      rel="noreferrer"
-                      ><span>APE SOLYMPICS</span></a
-                    >
-                  </div>
-                </div>
-              </div>
-              <ul class="tokdata">
-                <li><small>Sell Tax</small><span>0%</span></li>
-                <li><small>Contract</small><span>Renounced</span></li>
-              </ul>
-            </figure>
-            <div class="btn huge primary">
-              <section class="contractCopy ">
-                <input
-                class="value"
-                  type="text"
-                  value="000000000000000000000000000000000000000000"
-                  style="position: fixed; left: -9999px"
-                />
-                <p class="clipboard">
-                  <span class="reduced"
-                    >000000000000000000000000000000000000000000</span
-                  >
-                  <i data-ico="clipboard"></i>
-                  <aside class="message">Copied</aside>
-                </p>
-              </section>
-            </div>
-          </section>
-  
-
-          <section id="promo">
-            <div class="window-wrap">
-              <div class="window big">
-                <div class="navpan"><i class="navicons"></i></div>
-                <div class="body">
-                  <aside class="pattern"></aside>
-                  <div class="grid-x align-middle justify">
-                    <div class="cell-7 cnt-img">
-                      <figure>
-                        <div
-                          style="
-                            will-change: transform;
-                            transform: translateX(-15vw) rotate(10deg);
-                          "
-                        >
-                          <div>
-                            <img
-                              class="award"
-                              loading="lazy"
-                              src="./static/media/trophy.png"
-                              width="1105"
-                              height="865"
-                              alt="SNIBBU"
-                            /><span class="glare"
-                              ><img
-                                loading="lazy"
-                                src="./static/media/glare.png"
-                                width="114"
-                                height="114"
-                                alt="SNIBBU" /><img
-                                loading="lazy"
-                                src="./static/media/glare.png"
-                                width="54"
-                                height="54"
-                                alt="SNIBBU" /><img
-                                loading="lazy"
-                                src="./static/media/glare.png"
-                                width="34"
-                                height="34"
-                                alt="SNIBBU"
-                            /></span>
-                          </div>
-                        </div>
-                      </figure>
-                    </div>
-                    <div class="cell-5 cnt-txt">
-                      <h2>BECOME A<br />CHAMPION!</h2>
-                      <ul class="socialblocks">
-                        <li class="socblock">
-                          <a
-                            class="twitter"
-                            href="https://x.com"
-                            title="SOLYMPICS Twitter"
-                            rel="noreferrer"
-                            target="_blank"
-                            ><figure><i data-ico="tw"></i></figure>
-                            <span>Twitter</span></a
-                          >
-                        </li>
-                        <li class="socblock">
-                          <a
-                            class="telegram"
-                            href="https://t.me"
-                            title="SOLYMPICS Telegram"
-                            rel="noreferrer"
-                            target="_blank"
-                            ><figure><i data-ico="tg"></i></figure>
-                            <span>Telegram</span></a
-                          >
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="behind-ani">
-                <div class="window big">
-                  <div class="navpan"><i class="navicons"></i></div>
-                  <div class="body"></div>
-                </div>
-                <div class="window big">
-                  <div class="navpan"><i class="navicons"></i></div>
-                  <div class="body"></div>
-                </div>
-              </div>
-            </div>
-            <a
-              href="#radium"
-              class="btn primary huge"
-              title="APE SOLYMPICS"
-              rel="noreferrer"
-              target="_blank"
-              ><span>APE SOLYMPICS</span></a
-            >
-          </section>
-        </section> -->
 
         <section class="faq_container coloured fw spaceless ">
           <section id="faq">
             <div class="grid-x align-center">
               <div class="cell-6 mtxt">
-                <span class="lbl"
-                  ><img
-                    loading="lazy"
-                    src="./static/media/flower2.png"
-                    width="62"
-                    height="62"
-                    alt="FAQ"
-                  />
-                  FAQ</span
-                >
-                <h2>Frequently Asked Jumps, Throws, and Fumbles</h2>
+                <img src="./static/media/snibbu_submarine .png" alt="" class="faq_image">
               </div>
               <div class="cell-6 highlights">
+              <div class="btn primary "   rel="noreferrer"> <span>FAQ</span></div >
                 <div class="highlight _1 ">
-                  <button>
+                  <button> 
+                    <h4 data-color="light">Where can I buy $SNIBBU</h4>
                     <div class="circle"><span></span></div>
-                    <h4 data-color="light">Where can I buy $SOLYMPICS?</h4>
                   </button>
                   <section class="box">
                     <p>
@@ -1415,15 +1241,15 @@
                 </div>
                 <div class="highlight _2">
                   <button>
-                    <div class="circle"><span></span></div>
                     <h4 data-color="light">How does lottery work?</h4>
+                    <div class="circle"><span></span></div>
                   </button>
                   <section class="box"><p>Each NFT stands a chance to win prizes by matching the winning sport and country. Prizes, totaling $50k, will be awarded to 1st, 2nd, and 3rd place winners, funded by presale proceeds.</p></section>
                 </div>
                 <div class="highlight _3">
-                  <button>
+                  <button> 
+                    <h4 data-color="light">WHAT IS SNIBBU?</h4>
                     <div class="circle"><span></span></div>
-                    <h4 data-color="light">WHAT IS SOLYMPICS?</h4>
                   </button>
                   <section class="box"><p>Solympics is a meme coin built on the Solana blockchain, offering entertainment without intrinsic value. It aims to blend Solana's memetic energy with Olympic culture to bring fun, laughter, and positive vibes.</p></section>
                 </div>
