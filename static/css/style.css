@@ -132,13 +132,13 @@ q {
   /* --pink: #fec9d1; */
   --blue1: #FFE17B;
   --blue: #22a1dd;
-  --yellow_primary: #facd03;
+  --yellow_center_gradient: #facd03;
   --teal: #4beab4;
   --green: #6fc13c;
-  --yellow_center: #d34513;
   --chartreusse: #b1d559;
   --orange: #ed965c;
-  --orange_primary: #ffdf01;
+  --orange_primary: #d34513;
+  --yellor_primary: #ffdf01;
   --magenta: #ff6fa2;
   /* background: linear-gradient(94.67deg, #FFDF01 4.83%, #FACD03 36.71%, #D34513 123.93%);
  */
@@ -146,9 +146,9 @@ q {
   --h-link: #340a4b;
   --grad: linear-gradient(
     90deg,
-    var(--orange_primary) 0%,
-    var(--yellow_primary) 50%,
-    var(--yellow_center) 100%
+    var(--yellor_primary) 0%,
+    var(--yellow_center_gradient) 50%,
+    var(--orange_primary) 100%
   );
   --h-grad: linear-gradient(
     90deg,
@@ -718,16 +718,18 @@ aside {
 
   background: linear-gradient(
     70deg,
-    #ec9e08,
-    #feca57,
-    #ff9ff3,
-    #00d2d3,
-    #01ffd5,
-    #1dd1a1,
-    #ff6b6b
+    #D78F05,
+    #E2C602,
+    #F293E6,
+    #04C9CA,
+    #01D8B4, 
+    #F293E6,
+    #81ADF0,
+    #E2C602,
+    #D78F05
   );
   background-size: 1400% 1400%;
-  animation: gradientAnimation 30s linear infinite;
+  animation: gradientAnimation 70s linear infinite;
 }
 
 @keyframes gradientAnimation {
@@ -1688,6 +1690,9 @@ a:hover {
 .sun {
   display: block;
   position: absolute;
+}
+.podium{
+  z-index:11;
 }
 .ball img,
 .podium img {
