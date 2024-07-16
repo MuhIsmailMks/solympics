@@ -406,7 +406,7 @@ button:hover {
   margin-top: var(--v-medium);
 }
 .btn:hover {
-  box-shadow: -5px 6px 0 0 var(--negative);
+  box-shadow: 5px 6px 0 0 var(--orange_primary);
   text-decoration: none;
   transition: all 0.3s ease-in-out;
 }
@@ -492,8 +492,14 @@ button:hover {
 [data-ico="tw_black"]:before {
   background-image: url(../media/tw_black.svg);
 }
+[data-ico="tw_old"]:before {
+  background-image: url(../media/tw_old.svg);
+}
 [data-ico="etherscan"]:before {
   background-image: url(../media/etherscan.svg);
+}
+[data-ico="instagram"]:before {
+  background-image: url(../media/instagram.svg);
 }
 [data-ico="dextools"]:before {
   background-image: url(../media/dextools.svg);
@@ -1388,7 +1394,7 @@ a:hover {
   z-index: 1;
 }
 .quicklinks .socials:hover {
-  box-shadow: -5px 6px 0 0 var(--negative);
+  box-shadow: 5px 6px 0 0 var(--orange_primary);
   transition: all 0.3s ease-in-out;
 }
 .quicklinks .socials:hover:after,
