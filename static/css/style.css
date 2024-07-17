@@ -138,10 +138,7 @@ q {
   --orange: #ed965c;
   --orange_primary: #d34513;
   --yellor_primary: #ffdf01;
-  --magenta: #FFBF5F;
-  /* --magenta: #ff6fa2; */
-  /* background: linear-gradient(94.67deg, #FFDF01 4.83%, #FACD03 36.71%, #D34513 123.93%);
- */
+  --magenta: #FFBF5F; 
   --link: var(--negative);
   --h-link: #340a4b;
   --grad: linear-gradient(
@@ -149,6 +146,12 @@ q {
     var(--yellor_primary) 0%,
     var(--yellow_center_gradient) 50%,
     var(--orange_primary) 100%
+  );
+  --grad_bottom: linear-gradient(
+    180deg,
+    var(--yellor_primary) 0%,
+    var(--yellow_center_gradient) 50%,
+    #FC880D 100%
   );
   --h-grad: linear-gradient(
     90deg,
@@ -431,12 +434,11 @@ button:hover {
   padding: var(--btn-tiny-padding);
 }
 .btn.primary {
-  background: var(--grad);
-  /* color: var(--primary); */
+  background: var(--grad_bottom); 
   color: black;
-}
-.btn.primary:hover {
-  /* background: var(--h-grad); */
+} 
+.btn.primary.grad_right{
+  background: var(--grad); 
 }
 .btn.secondary {
   background-color: var(--primary);
@@ -713,7 +715,10 @@ body {
   margin-left: auto;
   margin-right: auto;
   max-width: var(--global-width);
-  padding: 0 var(--global-padding);
+ 
+}
+.global_padding{
+ padding: 0 var(--global-padding);
 }
 aside {
   z-index: -1;
@@ -1280,7 +1285,7 @@ a:hover {
 }
 .subnav {
   display: block;
-  margin-bottom: 137.22px;
+  /* margin-bottom: 137.22px; */
   overflow: hidden;
   position: relative;
 }
@@ -1409,7 +1414,7 @@ a:hover {
   transition: all 0.5s ease-in-out;
 }
 .quicklinks .socials { 
-  background: var(--grad);
+  background: var(--grad_bottom);
   position: relative;
   z-index: 3;
   border: 2px solid var(--negative);
@@ -1519,7 +1524,8 @@ a:hover {
     width: 64px;
   }
 }
-.hero > figure {
+
+/* .hero > figure {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -1566,7 +1572,8 @@ a:hover {
     calc(var(--large-radius) - 2px);
   display: block;
   width: 100%;
-}
+} */
+
 .foreground .glare {
   pointer-events: none;
   position: absolute;
@@ -3126,10 +3133,11 @@ a:hover {
   text-decoration: underline;
 }
 .contractCopy {
-  font-size: 16px;
-  margin-top: var(--v-small);
+  font-size: 3vw; 
   position: relative;
   z-index: 2;
+  width:auto;
+  color:black;
 }
 .btn.huge .contractCopy {
   display: flex;
@@ -3158,7 +3166,7 @@ a:hover {
 @media (max-width: 768px) {
   .clipboard .reduced {
     display: inline-block;
-    max-width: 220px;
+    /* max-width: 220px; */
     overflow: hidden;
     position: relative;
     text-overflow: ellipsis;
@@ -4382,7 +4390,7 @@ a:hover {
        }
 
        #promo .window .body{
-        height: 80%;
+        height: 82%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -4411,7 +4419,18 @@ a:hover {
         height: auto;
         object-fit: contain;
       }
-       
+
+      /* contract */ 
+      .contract_address{
+        width: 100%;
+        height: 100px;
+        background-color: white;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
       /* FAQ */
        #faq .highlights {
           display: flex;
@@ -4465,6 +4484,18 @@ a:hover {
       padding: 0;
     } 
     
+    /* footer */
+    .footer_logo{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .footer_logo img{
+      height: 100px;
+      width: auto;
+      object-fit: contain;
+    }
 
     @media screen and (max-width:1024px) {
 
@@ -4508,42 +4539,48 @@ a:hover {
     }
 
 
-@media (max-width: 600px){
-  .quicklinks .socials{
-    padding:.55rem;
-    border-radius:10px;
-  }
+    @media (max-width: 600px){
+      .quicklinks .socials{
+        padding:.55rem;
+        border-radius:10px;
+      }
 
-  
+      
 
-  .navigation .logo{
-    display:flex;
-    justify-content:center;
-  }
-  .navigation .logo:before{
-    background-image: url(../media/logo.png); 
-    background-size: contain; 
-    height: 100%; 
-    width: 80%;
-   }
+      .navigation .logo{
+        display:flex;
+        justify-content:center;
+      }
+      .navigation .logo:before{
+        background-image: url(../media/logo.png); 
+        background-size: contain; 
+        height: 100%; 
+        width: 80%;
+      }
 
-   /* treasure */
-   #promo .window .body { 
-    border-radius:0 0 20px 20px;
-  }
+      /* treasure */
+      #promo .window .body { 
+        border-radius:0 0 20px 20px;
+      }
 
-   #promo .btn.huge{
-    width:100%;
-    margin-top:200px; 
-   }
+      #promo .btn.huge{
+        width:100%;
+        margin-top:200px; 
+      }
 
-   
-   #promo .image{
-    /* position: absolute;
-    right: -20%;
-    bottom: -20%; */
+      
+      #promo .image{ 
+        width: 70%;
+      }
 
-    width: 70%;
-  }
-  
-}
+      /* contract */
+      .contract_address{ 
+        height: 70px; 
+      }
+
+      /* footer */  
+      .footer_logo img{
+        height: 50px; 
+      }
+
+    }

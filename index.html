@@ -10,7 +10,33 @@
 <body>
 
   <style>
-      
+      .hero{
+        width: 100%;
+        height: auto;
+        position: relative;
+      }
+
+      .hero img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .hero::before{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+
+        height: 200px;
+        width: 100%;
+
+        background: linear-gradient(0.51deg, #3189AD -16.56%, rgba(126, 151, 149, 0) 84.15%); 
+      }
+
+    
+    
+
   </style>
 
     <main id="root">
@@ -227,247 +253,21 @@
           </div>
         </nav>
 
-        <figure class="hero ">
-          <figure>
-            <div class="scene">
-              <div class="boxed">
-                <img
-                  class="landscape"
-                  loading="lazy"
-                  src="./static/media/scene-bg.png"
-                  width="1920"
-                  height="1329"
-                  alt="SNIBBU"
-                /><a
-                  class="sun"
-                  href="https://x.com"
-                  title="SOLYMPICS ON X"
-                  target="_blank"
-                  rel="noreferrer"
-                  ><img
-                    loading="lazy"
-                    src="./static/media/snibbu_shell.png"
-                    width="350"
-                    height="350"
-                    alt="SNIBBU ON X"
-                  />
-                  <aside class="alert">
-                    <div class="speech">Hey champ! Join X!</div>
-                  </aside></a
-                >
-              </div>
-              <a
-                class="ball"
-                href="#radium"
-                title="SOLYMPICS Chart"
-                target="_blank"
-                rel="noreferrer"
-                ><img
-                  loading="lazy"
-                  src="./static/media/snibbu_submarine .png"
-                  width="310"
-                  height="621"
-                  alt="SNIBBU Chart"
-                />
-                <aside class="alert">
-                  <div class="speech">Ready, Set, APE NOW!</div>
-                </aside></a
-              ><a
-                class="podium"
-                href="#"
-                title="DEXTOOLS"
-                target="_blank"
-                rel="noreferrer"
-                ><img
-                  loading="lazy"
-                  src="./static/media/snibbu_treasure.png"
-                  width="308"
-                  height="600"
-                  alt="SNIBBU" />
-                <aside class="alert">
-                  <div class="speech">Check it, be first!</div>
-                </aside>
-                <span class="glare"
-                  ><img
-                    loading="lazy"
-                    src="./static/media/glare.png"
-                    width="150"
-                    height="150"
-                    alt="SNIBBU" /><img
-                    loading="lazy"
-                    src="./static/media/glare.png"
-                    width="84"
-                    height="84"
-                    alt="SNIBBU" /><img
-                    loading="lazy"
-                    src="./static/media/glare.png"
-                    width="54"
-                    height="54"
-                    alt="SNIBBU" /></span
-              ></a>
-              <div class="foreground">
-                <img
-                  loading="lazy"
-                  src="./static/media/heroes.png"
-                  width="1417"
-                  height="907"
-                  alt="SNIBBU"
-                />
-                <div class="flower">
-                  <img
-                    loading="lazy"
-                    src="./static/media/flower.png"
-                    width="200"
-                    height="200"
-                    alt="SNIBBU"
-                  />
-                </div>
-                <div class="glare hero1">
-                  <img
-                    loading="lazy"
-                    src="./static/media/glare.png"
-                    width="150"
-                    height="150"
-                    alt="SNIBBU"
-                  /><img
-                    loading="lazy"
-                    src="./static/media/glare.png"
-                    width="84"
-                    height="84"
-                    alt="SNIBBU"
-                  /><img
-                    loading="lazy"
-                    src="./static/media/glare.png"
-                    width="54"
-                    height="54"
-                    alt="SNIBBU"
-                  />
-                </div>
-                <div class="glare hero2">
-                  <img
-                    loading="lazy"
-                    src="./static/media/glare.png"
-                    width="150"
-                    height="150"
-                    alt="SNIBBU"
-                  /><img
-                    loading="lazy"
-                    src="./static/media/glare.png"
-                    width="84"
-                    height="84"
-                    alt="SNIBBU"
-                  /><img
-                    loading="lazy"
-                    src="./static/media/glare.png"
-                    width="54"
-                    height="54"
-                    alt="SNIBBU"
-                  />
-                </div>
-                <div class="glare poop">
-                  <img
-                    loading="lazy"
-                    src="./static/media/glare.png"
-                    width="150"
-                    height="150"
-                    alt="SNIBBU"
-                  /><img
-                    loading="lazy"
-                    src="./static/media/glare.png"
-                    width="84"
-                    height="84"
-                    alt="SNIBBU"
-                  /><img
-                    loading="lazy"
-                    src="./static/media/glare.png"
-                    width="54"
-                    height="54"
-                    alt="SNIBBU"
-                  />
-                </div>
-                <div class="glare glass">
-                  <img
-                    loading="lazy"
-                    src="./static/media/glare.png"
-                    width="150"
-                    height="150"
-                    alt="SNIBBU"
-                  /><img
-                    loading="lazy"
-                    src="./static/media/glare.png"
-                    width="84"
-                    height="84"
-                    alt="SNIBBU"
-                  /><img
-                    loading="lazy"
-                    src="./static/media/glare.png"
-                    width="54"
-                    height="54"
-                    alt="SNIBBU"
-                  />
-                </div>
-              </div>
-            </div>
-          </figure>
-          <div class="heading">
-            <div style="will-change: transform; transform: translateY(5.69273vh)">
-              <h1>
-                <img
-                  class="ah"
-                  loading="lazy"
-                  src="./static/media/gates.png"
-                  width="1440"
-                  height="1146"
-                  alt="SNIBBU"
-                />
-                <div class="sitetitle">
-                  <div style="will-change: transform; transform: scale(1)">
-                    <img
-                      loading="lazy"
-                      src="./static/media/titlelogo.png"
-                      width="1042"
-                      height="1116"
-                      alt="SNIBBU"
-                    />
-                    <div class="glare">
-                      <img
-                        loading="lazy"
-                        src="./static/media/glare.png"
-                        width="150"
-                        height="150"
-                        alt="SNIBBU"
-                      /><img
-                        loading="lazy"
-                        src="./static/media/glare.png"
-                        width="84"
-                        height="84"
-                        alt="SNIBBU"
-                      /><img
-                        loading="lazy"
-                        src="./static/media/glare.png"
-                        width="54"
-                        height="54"
-                        alt="SNIBBU"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </h1>
-            </div>
-          </div>
-        </figure>
+       <div class="hero">
+        <img src="./static/media/snibbu_sea.jpg" alt="">
+       </div>
 
-        <section id="about" class="spaceless ">
+        <section id="about" class="spaceless global_padding">
           <div class="grid-x">
             <div class="cell-9">
               <span class="lbl"
-                ><img
+                >
+                <img
                   loading="lazy"
                   src="./static/media/flower2.png"
                   width="62"
                   height="62"
-                  alt="ABOUT"
-                />
+                  alt="ABOUT"  />
                 ABOUT</span
               >
               <h2>
@@ -584,7 +384,7 @@
           >
         </section>
 
-        <section class="olscene fw ">
+        <section class="olscene fw global_padding">
           <figure class="olroad">
             <div class="bg">
               <img
@@ -696,361 +496,8 @@
           </figure>
         </section>
 
-        <section id="draw" class="spaceless ">
-          <div class="grid-x">
-            <div class="cell-9">
-              <span class="lbl"
-                ><img
-                  loading="lazy"
-                  src="./static/media/flower2.png"
-                  width="62"
-                  height="62"
-                  alt="LUCKY DRAW"
-                />
-                LOTTERY NFTs</span
-              >
-              <h2>
-                Each NFT gives you a chance to win exciting prizes. If the country and
-                sport represented by your NFT take first place, you'll be rewarded. In
-                fact, prizes will be awarded for the top three positions in every
-                sport. These rewards will be funded by the presale raise, ensuring a
-                thrilling and rewarding experience for all participants.
-              </h2>
-              <div class="txt-cnt">
-                <p>
-                  A collection of 1100 unique NFTs presented by 10 *(+1 wild card)
-                  different countries and featuring 100 sports events.
-                </p>
-                <div class="table">
-                  <ul>
-                    <li>#</li>
-                    <li>WINNERS</li>
-                    <li>PRIZE %</li>
-                  </ul>
-                  <ul class="flash">
-                    <li>#GOLD</li>
-                    <li>x100</li>
-                    <li>≈ $50</li>
-                  </ul>
-                  <ul class="flash">
-                    <li>#SILVER</li>
-                    <li>x100</li>
-                    <li>≈ $25</li>
-                  </ul>
-                  <ul class="flash">
-                    <li>#BRONZE</li>
-                    <li>x100</li>
-                    <li>≈ $10</li>
-                  </ul>
-                </div>
-                <p>
-                  Mint your NFTs for a chance to win over $50k in prizes, awarded to
-                  lucky winners holding the golden NFT.
-                </p>
-              </div>
-            </div>
-          </div>
-          <figure class="story">
-            <div class="card diomond">
-              <div class="spinner"></div>
-              <div class="prize">
-                <div
-                  style="will-change: transform; transform: rotate(-5deg) scale(0.9)"
-                >
-                  <img
-                    loading="lazy"
-                    src="./static/media/won.png"
-                    width="674"
-                    height="764"
-                    alt="SNIBBU"
-                  />
-                </div>
-              </div>
-              <div class="glare">
-                <img
-                  loading="lazy"
-                  src="./static/media/glare.png"
-                  width="150"
-                  height="150"
-                  alt="SNIBBU"
-                /><img
-                  loading="lazy"
-                  src="./static/media/glare.png"
-                  width="84"
-                  height="84"
-                  alt="SNIBBU"
-                /><img
-                  loading="lazy"
-                  src="./static/media/glare.png"
-                  width="54"
-                  height="54"
-                  alt="SNIBBU"
-                /><img
-                  loading="lazy"
-                  src="./static/media/glare.png"
-                  width="54"
-                  height="54"
-                  alt="SNIBBU"
-                />
-              </div>
-              <div class="desc from-top pattern">
-                <p>WIN BIG WITH LOTTERY NFTs!</p>
-              </div>
-              <div class="desc from-bot pattern">
-                <img
-                  class="arrowico"
-                  loading="lazy"
-                  src="./static/media/ad.png"
-                  width="55"
-                  height="55"
-                  alt="SNIBBU"
-                />
-                <p>FOMO</p>
-              </div>
-            </div>
-            <div class="ticket">
-              <div class="card">
-                <span class="showhead"
-                  ><img
-                    loading="lazy"
-                    src="./static/media/snibbu_treasure.png"
-                    width="778"
-                    height="800"
-                    alt="SNIBBU"
-                /></span>
-              </div>
-              <span class="card dups"></span>
-              <div class="desc">
-                <div class="arrow dark">
-                  <img
-                    class="arrowico"
-                    loading="lazy"
-                    src="./static/media/al.png"
-                    width="55"
-                    height="55"
-                    alt="SNIBBU"
-                  />
-                </div>
-                <div class="arrow light">
-                  <img
-                    class="arrowico"
-                    loading="lazy"
-                    src="./static/media/ad.png"
-                    width="55"
-                    height="55"
-                    alt="SNIBBU"
-                  />
-                </div>
-                <p class="txt">
-                  <span>MINT</span><span class="small">LUCKY<br />TICKET</span>
-                </p>
-              </div>
-            </div>
-            <div class="explosion">
-              <div class="card">
-                <img
-                  class="star"
-                  loading="lazy"
-                  src="./static/media/star.svg"
-                  width="169"
-                  height="93"
-                  alt="SNIBBU"
-                /><img
-                  class="fingers"
-                  loading="lazy"
-                  src="./static/media/snibbu_shell.png"
-                  width="241"
-                  height="600"
-                  alt="SNIBBU"
-                />
-              </div>
-              <span class="card dups"></span>
-              <div class="rotator">
-                <div class="desc pattern">
-                  <img
-                    class="arrowico intxt"
-                    loading="lazy"
-                    src="./static/media/ad.png"
-                    width="55"
-                    height="55"
-                    alt="SNIBBU"
-                  />
-                  <p class="txt">
-                    <span>LFG</span><span class="small">FINGERS<br />CROSSED</span>
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="party">
-              <div class="card">
-                <span class="repeater"></span>
-                <div class="heads">
-                  <div class="head">
-                    <div class="wrap">
-                      <img
-                        loading="lazy"
-                        width="91.5"
-                        height="110"
-                        src="./static/media/ath3.png"
-                        alt="SNIBBU"
-                      />
-                    </div>
-                  </div>
-                  <div class="head">
-                    <div class="wrap">
-                      <img
-                        loading="lazy"
-                        width="91.5"
-                        height="110"
-                        src="./static/media/ath2.png"
-                        alt="SNIBBU"
-                      />
-                    </div>
-                  </div>
-                  <div class="head">
-                    <div class="wrap">
-                      <img
-                        loading="lazy"
-                        width="91.5"
-                        height="110"
-                        src="./static/media/ath1.png"
-                        alt="SNIBBU"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div class="glare">
-                  <img
-                    loading="lazy"
-                    src="./static/media/glare.png"
-                    width="38"
-                    height="38"
-                    alt="SNIBBU"
-                  /><img
-                    loading="lazy"
-                    src="./static/media/glare.png"
-                    width="22"
-                    height="22"
-                    alt="SNIBBU"
-                  /><img
-                    loading="lazy"
-                    src="./static/media/glare.png"
-                    width="22"
-                    height="22"
-                    alt="SNIBBU"
-                  />
-                </div>
-              </div>
-              <span class="card dups"></span>
-              <div class="rotator">
-                <div class="desc pattern">
-                  <img
-                    class="arrowico intxt"
-                    loading="lazy"
-                    src="./static/media/ad.png"
-                    width="55"
-                    height="55"
-                    alt="SNIBBU"
-                  />
-                  <p class="txt">
-                    <span class="small"
-                      >ONLY<br /><span class="oneliner">1,100</span></span
-                    ><span>NFTs</span>
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="buybtn">
-              <div class="card">
-                <a
-                  class="circlbtn"
-                  href="#radium"
-                  title="APE NOW"
-                  rel="noreferrer"
-                  target="_blank"
-                  ><span>APE<br />NOW</span></a
-                >
-                <div class="glare">
-                  <img
-                    loading="lazy"
-                    src="./static/media/glare.png"
-                    width="118"
-                    height="118"
-                    alt="SNIBBU"
-                  /><img
-                    loading="lazy"
-                    src="./static/media/glare.png"
-                    width="58"
-                    height="58"
-                    alt="SNIBBU"
-                  /><img
-                    loading="lazy"
-                    src="./static/media/glare.png"
-                    width="28"
-                    height="28"
-                    alt="SNIBBU"
-                  />
-                </div>
-              </div>
-              <div class="desc from-top">
-                <div class="arrow light">
-                  <img
-                    class="arrowico"
-                    loading="lazy"
-                    src="./static/media/ad.png"
-                    width="55"
-                    height="55"
-                    alt="SNIBBU"
-                  />
-                </div>
-                <div class="arrow dark">
-                  <img
-                    class="arrowico"
-                    loading="lazy"
-                    src="./static/media/al.png"
-                    width="55"
-                    height="55"
-                    alt="SNIBBU"
-                  />
-                </div>
-                <div class="arrow light">
-                  <img
-                    class="arrowico"
-                    loading="lazy"
-                    src="./static/media/ad.png"
-                    width="55"
-                    height="55"
-                    alt="SNIBBU"
-                  />
-                </div>
-              </div>
-              <div class="desc from-left">
-                <div class="arrow light">
-                  <img
-                    class="arrowico"
-                    loading="lazy"
-                    src="./static/media/ad.png"
-                    width="55"
-                    height="55"
-                    alt="SNIBBU"
-                  />
-                </div>
-                <div class="arrow dark">
-                  <img
-                    class="arrowico"
-                    loading="lazy"
-                    src="./static/media/al.png"
-                    width="55"
-                    height="55"
-                    alt="SNIBBU"
-                  />
-                </div>
-              </div>
-            </div>
-          </figure>
-        </section>
-
-        <section id="nfts" class="spaceless ">
+      
+        <section id="nfts" class="spaceless global_padding">
           <div class="grid-x">
             <div class="cell-9">
               <span class="lbl"
@@ -1144,7 +591,25 @@
             ><span>SNIBBU MINT</span></a  >
         </section>
 
-        <section id="promo" class="treasure">
+        <section class="contract_address">
+          <section class="contractCopy ">
+            <input
+            class="value"
+              type="text"
+              value="000000000000000000000000000000000000000000"
+              style="position: fixed; left: -9999px"
+            />
+            <p class="clipboard">
+              <span class="reduced"
+                >000000000000000000000000000000000000000000</span
+              >
+              <i data-ico="clipboard"></i>
+              <aside class="message">Copied</aside>
+            </p>
+          </section>
+        </section>
+
+        <section id="promo" class="treasure global_padding">
           <div class="window-wrap">
             <div class="window big">
               <div class="navpan"><i class="navicons"></i></div>
@@ -1204,7 +669,7 @@
           </div>
           <a
             href="#radium"
-            class="btn primary huge"
+            class="btn primary huge grad_right"
             title="APE SNIBBU"
             rel="noreferrer"
             target="_blank"
@@ -1212,7 +677,7 @@
           >
         </section>
 
-        <section class="faq_container coloured fw spaceless ">
+        <section class="faq_container coloured fw spaceless global_padding">
           <section id="faq">
             <div class="grid-x align-center">
               <div class="cell-6 mtxt">
@@ -1303,56 +768,12 @@
               </div>
             </div>
           </div>
-          <div class="align-center">
-            <div><i class="logo"></i></div>
-            <div class="info">
-              <ul class="socials">
-                <li>
-                  <a
-                    href="https://x.com"
-                    rel="noreferrer"
-                    title="SOLYMPICS Twitter"
-                    target="_blank"
-                    ><i data-ico="tw"></i
-                  ></a>
-                </li>
-                <li>
-                  <a
-                    href="https://t.me"
-                    rel="noreferrer"
-                    title="SOLYMPICS Telegram"
-                    target="_blank"
-                    ><i data-ico="tg"></i
-                  ></a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    rel="noreferrer"
-                    title="SOLYMPICS DexTools"
-                    target="_blank"
-                    ><i data-ico="dextools"></i
-                  ></a>
-                </li>
-                <li>
-                  <a
-                    href="https://dexscreener.com"
-                    rel="noreferrer"
-                    title="SOLYMPICS DexScreener"
-                    target="_blank"
-                    ><i data-ico="dexscreener"></i
-                  ></a>
-                </li>
-                <li>
-                  <a
-                    href="#solscan"
-                    rel="noreferrer"
-                    title="SOLYMPICS EtherScan"
-                    target="_blank"
-                    ><i data-ico="solscan"></i
-                  ></a>
-                </li>
-              </ul>
+          <div class="align-center footer_logo">
+            <div>
+              <!-- <p>snibbu</p> -->
+              <img src="./favicon.png" alt="">
+            </div>
+            <div class="info"> 
               <p class="copy">
                 <span>SNIBBU © 2024</span>
                 <a href="#" rel="nofollow" 
