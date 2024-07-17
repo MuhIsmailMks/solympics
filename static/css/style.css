@@ -2839,7 +2839,7 @@ a:hover {
 
      position: absolute;
 
-     left: 5%;
+     left: -10%;
    }
 
    #about .btn.primary{
@@ -2863,7 +2863,7 @@ a:hover {
        .about_content_container  .content img{
          width: 80vw; 
          position: relative;
-         left: auto; 
+         left: -10%; 
        }
 
        .about_content_container  .content .about_text{ 
