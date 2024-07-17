@@ -3177,6 +3177,10 @@ a:hover {
         letter-spacing: 1px; 
       }
 
+      #promo .btn.huge{
+        width:100%; 
+       }
+
       /* contract */
       .contract_address{ 
         height: 70px; 
