@@ -2444,12 +2444,7 @@ a:hover {
 }
 .tokdata li span {
   font-size: var(--h2);
-}
-@media (min-width: 391px) {
-  #tokenomics h2 {
-    /* font-size: 10.2vw; */
-  }
-} 
+}   
 @media (min-width: 1024px) { 
   #tokenomics .gradfill:after {
     text-shadow: -6px 6.5px 0 var(--negative);
