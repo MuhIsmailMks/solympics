@@ -245,7 +245,7 @@ q {
   font-family: Gill;
   font-style: normal;
   font-weight: 400;
-  src: url(../media/Gill.754fba8b2bac4e6fa426.woff2) format("woff2");
+  src: url(../media/HollaBear_Regular.ttf) format("woff2");
 }
 h1,
 h2,
@@ -2822,7 +2822,7 @@ a:hover {
      width: 60%;
      text-align: end;
 
-     font-size: 40px;
+     font-size: 30px;
    }
 
    #about .btn.huge{
