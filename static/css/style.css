@@ -2478,6 +2478,11 @@ a:hover {
     text-shadow: -6px 6.5px 0 var(--negative);
   } 
 } 
+@media (max-width: 600px) {
+  #tokenomics h2 {
+    font-size: 10vw;
+  }
+}
 @media (min-width: 1921px) {
   #tokenomics h2 {
     font-size: 117px;
@@ -2892,6 +2897,7 @@ a:hover {
     .cnt-txt{ 
       padding-left:5rem !important;
      }
+
      .about_content_container  .content{ 
        height: auto; 
        justify-content: center;
@@ -2959,10 +2965,7 @@ a:hover {
         object-fit: contain;
       }
 
-      /* TEASURE */
-      .cnt-txt{
-        width: 100%; 
-       }
+      /* TEASURE */ 
 
        .treasure .window-wrap{
         height: 400px;
@@ -3012,6 +3015,12 @@ a:hover {
         height: auto;
         object-fit: contain;
         transform: scaleX(-1);
+      }
+
+      .find{
+        position: absolute;
+        bottom: -50px;
+        right: 20%;
       }
 
       /* contract */ 
@@ -3200,7 +3209,9 @@ a:hover {
       .navigation .logo{
         display:flex;
         justify-content:center;
+        width: 40vw;
       }
+
       .navigation .logo:before{
         background-image: url(../media/logo.png); 
         background-size: contain; 
@@ -3237,10 +3248,16 @@ a:hover {
       /* treasure */
       #promo .window .body { 
         border-radius:0 0 20px 20px;
+        height: 82.4%;
       } 
       
     #promo .cnt-txt p{
       font-size:20px;  
+     }
+
+     #promo .cnt-txt .find{
+      font-size:3vw;  
+      right:10vw;
      }
 
       #promo .image{ 
@@ -3250,6 +3267,10 @@ a:hover {
       #faq .highlights h4{
         font-size:4vw;
         letter-spacing: 1px; 
+      }
+
+      #faq .highlights p{
+        font-size:3vw;
       }
 
       #promo .btn.huge{
