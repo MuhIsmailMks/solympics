@@ -2824,8 +2824,15 @@ a:hover {
      font-size: 40px;
    }
 
+   #about .btn.huge{
+    width:700px;
+    max-width:95%;
+    margin:0 auto;
+   }
+
    .about_content_container  .content img{
      width: 40vw;
+     max-width:600px;
      height: auto;
      object-fit: contain;
 
@@ -3089,8 +3096,12 @@ a:hover {
 
       /* tokenomics */
       .tokenomics{ 
-        height:600px;
+        height:120vw;
         margin-top: 3rem;
+      }
+
+      .shadow_text{ 
+        top: 5px; 
       }
 
       .token_images { 
