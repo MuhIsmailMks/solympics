@@ -314,6 +314,11 @@ h6 {
   top: 0;
   z-index: -1;
 }
+.w_full{
+  width:100%;
+  display:flex;
+  justify-content:center;
+}
 .lower {
   text-transform: lowercase;
 }
@@ -708,13 +713,15 @@ body {
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
 }
 * {
-  /* scrollbar-color: unset !important;
-  scrollbar-width: none !important; */
+  scrollbar-color: unset !important;
+  scrollbar-width: none !important; 
 }
 #root {
   margin-left: auto;
   margin-right: auto;
-  max-width: var(--global-width);
+  max-width:100%;
+
+  overflow:hidden;
  
   display:flex;
   flex-direction:column;

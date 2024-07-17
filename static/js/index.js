@@ -1,3 +1,8 @@
+   // aos 
+   AOS.init({ 
+    once: true
+ });   
+
 const subMenu = document.querySelector('.submenu');
 const menuBtn = document.querySelector('.menu_btn');
 const closeBtn = document.querySelector('.close_menu');

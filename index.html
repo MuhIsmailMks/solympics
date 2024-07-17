@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./static/css/style.css">
+    <!-- aos animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="icon" href="./favicon.png" type="Image/x-icon">
     <title>Snibbu</title>
 </head>
@@ -70,10 +72,14 @@
         </nav>
 
         <nav class="navigation  spaceless exclude sticky" style="top: 44px">
-          <button class="btn menu_btn small spaceless primary" id="menuToggle">
-            <span>MENU</span>
-          </button>
-          <div class="submenu pattern">
+          <div data-aos="fade-right"
+          data-aos-duration="1000"
+          data-aos-delay="100">
+            <button class="btn menu_btn small spaceless primary" id="menuToggle">
+              <span>MENU</span>
+            </button>
+          </div>
+          <div class="submenu pattern" >
             <ul class="mitems">
               <li>
                 <ul class="nlink">
@@ -204,13 +210,17 @@
             </ul>
             <button data-close="true" class="close_menu"><span>✖</span></button>
           </div>
-          <div class="nav_logo">
+          <div class="nav_logo"  data-aos="zoom-out"
+          data-aos-duration="1000"
+          data-aos-delay="200">
             <div class="logo_text">
               <span>SNIBBU</span>
               <p>SNIBBU</p>
              </div> 
           </div>
-          <div class="quicklinks">
+          <div class="quicklinks" data-aos="fade-left"
+          data-aos-duration="1000"
+          data-aos-delay="100">
             <div class="socials">
               <a
                 href="#instagram"
@@ -272,7 +282,9 @@
             <div class="content">
               <img src="./static/media/snibbu_shell.png" alt="" class="snibbu_shell">
 
-              <div class="about_text">
+              <div class="about_text" data-aos="fade-left"
+              data-aos-duration="700"
+              data-aos-delay="300">
                 <div class="btn primary "   rel="noreferrer"> <span>ABOUT</span></div >
                 <p>
                   Welcome to the Solympics, where Solana’s memeable force meets the
@@ -281,7 +293,9 @@
                   of Solana culture and Olympic spirit. Let the games begin!
                 </p>
               </div>
+
             </div>
+
             <div class="txt-cnt"> 
               <figure class="counter-wrap">
                 <div class="window">
@@ -333,20 +347,28 @@
                
             </div>
           </div>
+
+         <div data-aos="fade-up"
+         data-aos-duration="700"
+         data-aos-delay="100">
           <a
-            href="#radium"
-            class="btn primary huge grad_right"
-            title="APE SNIBBU"
-            rel="noreferrer"
-            target="_blank"
-            ><span>APE SNIBBU</span></a
-          >
+          href="#radium"
+          class="btn primary huge grad_right"
+          title="APE SNIBBU"
+          rel="noreferrer"
+          target="_blank"
+          ><span>APE SNIBBU</span></a
+        >
+         </div>
+
         </section> 
 
         <section id="tokenomics" class="tokenomics ">
           <!-- content -->
-            <div class="tokenomics_title">
-              <h2 class="gradient_title">
+            <div class="tokenomics_title" data-aos="fade-right"
+            data-aos-duration="1000"
+            data-aos-delay="300">
+              <h2 class="gradient_title" >
                 TOKENOMICS <br>
                  & ROADMAPS
                 </h2>
@@ -450,7 +472,11 @@
               </div>
             </div>
           </div>
-          <a
+          
+          <div class="w_full" data-aos="fade-up"
+          data-aos-duration="700"
+          data-aos-delay="100">
+            <a
             href="#radium"
             class="btn primary huge grad_right"
             title="APE SNIBBU"
@@ -458,6 +484,8 @@
             target="_blank"
             ><span>APE SNIBBU</span></a
           >
+          </div>
+
         </section>
 
         <section class="faq_container coloured fw spaceless global_padding">
@@ -467,8 +495,17 @@
                 <img src="./static/media/snibbu_submarine .png" alt="" class="faq_image">
               </div>
               <div class="cell-6 highlights">
-              <div class="btn primary "   rel="noreferrer"> <span>FAQ</span></div >
-                <div class="highlight _1 ">
+
+                <div data-aos="fade-left"
+                data-aos-duration="700"
+                data-aos-delay="100">
+                  <div class="btn primary " rel="noreferrer"> <span>FAQ</span>
+                  </div >
+                </div>
+
+                <div class="highlight _1 " data-aos="fade-left"
+                data-aos-duration="700"
+                data-aos-delay="300">
                   <button> 
                     <h4 data-color="light">Where can I buy $SNIBBU</h4>
                     <div class="circle"><span></span></div>
@@ -481,20 +518,25 @@
                     </p>
                   </section>
                 </div>
-                <div class="highlight _2">
+                <div class="highlight _2" data-aos="fade-left"
+                data-aos-duration="700"
+                data-aos-delay="400">
                   <button>
                     <h4 data-color="light">How does lottery work?</h4>
                     <div class="circle"><span></span></div>
                   </button>
                   <section class="box"><p>Each NFT stands a chance to win prizes by matching the winning sport and country. Prizes, totaling $50k, will be awarded to 1st, 2nd, and 3rd place winners, funded by presale proceeds.</p></section>
                 </div>
-                <div class="highlight _3">
+                <div class="highlight _3" data-aos="fade-left"
+                data-aos-duration="700"
+                data-aos-delay="600">
                   <button> 
                     <h4 data-color="light">WHAT IS SNIBBU?</h4>
                     <div class="circle"><span></span></div>
                   </button>
                   <section class="box"><p>Solympics is a meme coin built on the Solana blockchain, offering entertainment without intrinsic value. It aims to blend Solana's memetic energy with Olympic culture to bring fun, laughter, and positive vibes.</p></section>
                 </div>
+
               </div>
             </div>
           </section>
@@ -552,14 +594,18 @@
             </div>
           </div>
           <div class="align-center ">
-            <div class="footer_logo"> 
+            <div class="footer_logo" data-aos="fade-up"
+            data-aos-duration="700"
+            data-aos-delay="100"> 
                <div class="logo_text">
                 <span>SNIBBU</span>
                 <p>SNIBBU</p>
                </div>
               <img src="./favicon.png" alt="">
             </div>
-            <div class="info"> 
+            <div class="info" data-aos="fade-up"
+            data-aos-duration="700"
+            data-aos-delay="300"> 
               <p class="copy">
                 <span>SNIBBU © 2024</span>
                 <a href="#" rel="nofollow" 
@@ -575,6 +621,8 @@
     </main>
       
 
+     <!-- aos js scroll animation -->
+     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <!-- scroll magic -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.min.js"></script>
