@@ -3258,3 +3258,18 @@ a:hover {
       transform: translate3d(85px, 0, 0);
   }
 }
+
+.on_size{
+  animation: on_size 20s linear infinite;
+} 
+@keyframes on_size {
+  0% {
+    transform: scale(1);
+  }
+  50% { 
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
