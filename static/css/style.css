@@ -967,8 +967,7 @@ a:hover {
   border-radius: var(--large-radius);
   border-width: 2px;
 }
-.window .navpan {
-  /* background: var(--grad); */
+.window .navpan { 
   border-bottom: 2px solid var(--border);
   padding: 5px 8px;
 }
@@ -979,6 +978,7 @@ a:hover {
   align-items: center;
   display: flex;
   flex-flow: column;
+  background: var(--grad);
 }
 .window .btn {
   margin-bottom: var(--gutter);
@@ -1287,8 +1287,7 @@ a:hover {
   width: 100%;
 }
 .subnav {
-  display: block;
-  /* margin-bottom: 137.22px; */
+  display: block; 
   overflow: hidden;
   position: relative;
 }
@@ -1364,14 +1363,12 @@ a:hover {
   transform: scale(0.98);
   transition: all 0.3s ease-in-out;
 }
-.mitems .gradfill:after {
-  /* text-shadow: -5px 3.5px 0 var(--magenta); */
+.mitems .gradfill:after { 
   text-shadow: -5px 3.5px 0 black;
   transition: all 0.2s ease-in-out;
 }
 .mitems .gradfill:hover:after {
-  text-shadow: -6px 5.5px 0 black;
-  /* text-shadow: -6px 5.5px 0 var(--magenta); */
+  text-shadow: -6px 5.5px 0 black; 
   transition: all 0.3s ease-in-out;
 }
 .quicklinks {
@@ -1930,6 +1927,10 @@ a:hover {
 }
 #about .txt-cnt {
   margin-bottom: var(--v-medium);
+  width:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .counter-wrap,
 .counter-wrap > .window {
@@ -2167,12 +2168,10 @@ a:hover {
 .nu1 img {
   animation: bounce 2s ease infinite;
 }
-@media (min-width: 1024px) {
-  #about .txt-cnt {
-    padding-left: 20%;
-  }
+@media (min-width: 1024px) { 
   #about .txt-cnt > * {
-    max-width: 420px;
+    /* max-width: 20px; */
+    width:500px;
   }
   .syrenge {
     margin-left: -140%;
@@ -3210,6 +3209,7 @@ a:hover {
   border-radius: calc(var(--large-radius) - 2px) calc(var(--large-radius) - 2px)
     0 0;
 }
+
 #promo .window .body {
   overflow: visible;
   position: relative;
@@ -3217,6 +3217,7 @@ a:hover {
 
   border-radius:0 0 50px 50px;
 }
+
 #promo .body .pattern {
   border-radius: 0 0 calc(var(--large-radius) - 2px)
     calc(var(--large-radius) - 2px);
@@ -3273,19 +3274,19 @@ a:hover {
   z-index: 1;
 }
 #promo .window-wrap .behind-ani {
-  left: 0;
-  top: 0;
+  right: 0;
+  bottom: 0;
   z-index: 0;
 }
 #promo .behind-ani > :first-child {
   animation: winAni6 1.5s ease-in-out infinite;
-  left: -17.85714px;
-  top: -100.71429px;
+  right: -17.85714px;
+  bottom: -100.71429px;
 }
 #promo .behind-ani > :nth-child(2) {
   animation: winAni7 1.5s ease-in-out 0.2s infinite;
-  left: 25.71429px;
-  top: -39.28571px;
+  right: 25.71429px;
+  bottom: -39.28571px;
 }
 #promo .cnt-txt h2 {
   text-transform: none;
@@ -3296,23 +3297,23 @@ a:hover {
 @keyframes winAni6 {
   0%,
   to {
-    left: 0;
-    top: 0;
+    right: 0;
+    bottom: 0;
   }
   50% {
-    left: -17.85714px;
-    top: -100.71429px;
+    right: -7.85714px;
+    bottom: -10.71429px;
   }
 }
 @keyframes winAni7 {
   0%,
   to {
-    left: 0;
-    top: 0;
+    right: 0;
+    bottom: 0;
   }
   50% {
-    left: -17.85714px;
-    top: -100.71429px;
+    right: -10.85714px;
+    bottom: -120.71429px;
   }
 }
 @media (max-width: 1023px) {
@@ -3335,33 +3336,33 @@ a:hover {
     pointer-events: none;
   }
   #promo .behind-ani > :first-child {
-    left: -25px;
-    top: -141px;
+    right: -25px;
+    bottom: -141px;
   }
   #promo .behind-ani > :nth-child(2) {
-    left: 36px;
-    top: -55px;
+    right: 36px;
+    bottom: -55px;
   }
   @keyframes winAni6 {
     0%,
     to {
-      left: 0;
-      top: 0;
+      right: 0;
+      bottom: 0;
     }
     50% {
-      left: -25px;
-      top: -141px;
+      right: -25px;
+      bottom: -41px;
     }
   }
   @keyframes winAni7 {
     0%,
     to {
-      left: 0;
-      top: 0;
+      right: 0;
+      bottom: 0;
     }
     50% {
-      left: -25px;
-      top: -141px;
+      right: -25px;
+      bottom: -41px;
     }
   }
   #promo .window.big .navpan {
@@ -3805,29 +3806,8 @@ a:hover {
 @media (min-width: 1024px) {
   .btns {
     margin-top: 0;
-  }
-  #memer .gradfill {
-    font-size: 12.8vw;
-  }
-  #memer .gradfill:after {
-    text-shadow: -6px 6.5px 0 var(--negative);
   } 
-  .img-editor,
-  .meme-options {
-    flex: 1 1;
-  } 
-  .meme-options {
-    border-left: 5px solid var(--negative);
-    border-top: none;
-    max-width: 350px;
-  }
-  .tabs-panel {
-    flex-flow: row wrap;
-    overflow: hidden;
-  }
-  .meme-options label {
-    width: calc(25% - 3.75px);
-  }
+   
 }
 @media (min-width: 1921px) {
   #memer .gradfill {
@@ -3840,18 +3820,7 @@ a:hover {
 .coloured {
   padding-bottom: var(--v-large);
   position: relative;
-}
-.coloured:before {
-  background-color: var(--global-accent-bg);
-  content: "";
-  display: block;
-  height: 100%;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  z-index: -2;
-}
+} 
 .coloured > * {
   margin-left: auto;
   margin-right: auto;
@@ -4224,62 +4193,7 @@ a:hover {
   .marquee {
     font-size: 21px;
   }
-}
-#hall .gradfill {
-  font-size: 16.4vw;
-}
-#hall .gradfill:after {
-  text-shadow: -4px 4.5px 0 var(--negative);
-}
-.gallery {
-  align-items: center;
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-  margin-top: var(--v-medium);
-}
-.photo {
-  margin-bottom: var(--v-medium);
-  padding: 0;
-  position: relative;
-}
-.photo > .window {
-  position: relative;
-  z-index: 2;
-}
-.photo .btn-group {
-  bottom: 0;
-  display: flex;
-  left: 50%;
-  position: absolute;
-  transform: translateX(-50%);
-  z-index: 2;
-}
-.photo img {
-  display: block;
-  position: relative;
-  width: 100%;
-  z-index: 2;
-}
-.download-button {
-  display: block;
-  height: 100%;
-  margin-right: 15px;
-  margin-top: 15px;
-}
-.download-button:hover {
-  transform: scale(1.1);
-}
-.gallery .behind-ani > :first-child {
-  animation: winAni8 1.5s ease-in-out infinite;
-  left: 35.71429px;
-  top: 85.71429px;
-}
-.gallery .behind-ani > :nth-child(2) {
-  animation: winAni9 1.5s ease-in-out 0.2s infinite;
-  left: 21.42857px;
-  top: 57.14286px;
-}
+} 
 @keyframes winAni8 {
   0%,
   to {
@@ -4319,23 +4233,7 @@ a:hover {
     font-size: 179px;
   }
 }
-#error {
-  align-items: center;
-  display: flex;
-  flex-flow: column nowrap;
-  margin-top: var(--v-large);
-  text-align: center;
-}
-#error:after {
-  border-bottom: 1px dashed #ffffff80;
-  bottom: 0;
-  content: "";
-  display: block;
-  height: 0;
-  left: 5px;
-  position: absolute;
-  width: calc(100% - 10px);
-}
+ 
 [data-displace] {
   display: inline-block;
   position: relative;
@@ -4375,9 +4273,16 @@ a:hover {
 
 
 
-/* new update */
+    /* new update */ 
+      /* about */ 
+      #about .window .body { 
+        background: var(--grad);
+        height: 89%; 
+        border-radius:0 0 10px 10px;
+      }
 
-      
+      /* #promo .window .body */
+
       /* TEASURE */
       .cnt-txt{
         width: 90%;
@@ -4429,6 +4334,7 @@ a:hover {
       .contract_address{
         width: 100%;
         height: 100px;
+        margin-top:50px;
         background-color: white;
 
         display: flex;
