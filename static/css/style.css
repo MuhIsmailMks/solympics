@@ -2429,12 +2429,36 @@ a:hover {
 #tokenomics .gradfill:after {
   text-shadow: -3px 3.5px 0 var(--negative);
 } 
+
+.track {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+
+  padding:0 2rem;
+}
+.track .wrapper {
+  pointer-events: none;
+  position: relative;
+}
+.track .wrapper img {
+  transform: scale(1.5);
+}
+.track .wrapper .btn {
+  left: 50%;
+  pointer-events: auto;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
 .tokdata {
   line-height: 1;
   text-transform: uppercase;
+
+
 }
 .tokdata li:not(:last-of-type) {
-  margin-bottom: var(--gutter);
+  margin-bottom: var(--gutter); 
 }
 .tokdata:last-of-type {
   text-align: right;
@@ -2446,6 +2470,10 @@ a:hover {
   font-size: var(--h2);
 }   
 @media (min-width: 1024px) { 
+  .track { 
+    padding:0 5rem;
+  }
+
   #tokenomics .gradfill:after {
     text-shadow: -6px 6.5px 0 var(--negative);
   } 
@@ -2861,6 +2889,9 @@ a:hover {
 
    
    @media screen and (max-width:1024px) {
+    .cnt-txt{ 
+      padding-left:5rem !important;
+     }
      .about_content_container  .content{ 
        height: auto; 
        justify-content: center;
@@ -2883,19 +2914,26 @@ a:hover {
          gap: 2rem;
        }
 
+ 
+
    }
 
       /* tokenomics */ 
       .tokenomics{
         position: relative;
         width: 100%;
-        height: 700px;
+        height: 1400px;
         
         margin-top: 10rem;
       }
     
+      .cnt-txt{
+        width: 100%;
+        padding-left:15rem;
+       }
+
       .tokenomics_title{
-        position: absolute;
+        position: relative;
         left: 3rem; 
         top: 0;
         z-index: 9;
@@ -2923,7 +2961,7 @@ a:hover {
 
       /* TEASURE */
       .cnt-txt{
-        width: 90%;
+        width: 100%; 
        }
 
        .treasure .window-wrap{
@@ -2959,7 +2997,7 @@ a:hover {
 
        #promo .image{
         position: absolute;
-        right: -20%;
+        left: -25%;
         bottom: -20%;
   
         width: 50%;
@@ -2973,6 +3011,7 @@ a:hover {
   
         height: auto;
         object-fit: contain;
+        transform: scaleX(-1);
       }
 
       /* contract */ 
@@ -3120,6 +3159,8 @@ a:hover {
         font-size: 8vw;
       }
 
+   
+
       /* faq */
       .highlights .highlight button{ 
         justify-content: center;  
@@ -3176,7 +3217,7 @@ a:hover {
 
       /* tokenomics */
       .tokenomics{ 
-        height:120vw;
+        height:160vw;
         margin-top: 3rem;
       }
 
@@ -3188,15 +3229,20 @@ a:hover {
         width: 100%; 
     }
 
-    #promo .cnt-txt p{
-      font-size:20px;  
-     }
+    .tokdata li span{
+      font-size:14px
+    }
+
 
       /* treasure */
       #promo .window .body { 
         border-radius:0 0 20px 20px;
       } 
       
+    #promo .cnt-txt p{
+      font-size:20px;  
+     }
+
       #promo .image{ 
         width: 70%;
       }
