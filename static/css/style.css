@@ -2728,9 +2728,11 @@ a:hover {
 .marquee-right .marquee-el {
   animation-direction: normal;
 }
+
 .marquee-left .marquee-el {
   animation-direction: reverse;
 }
+
 @keyframes scroll {
   0% {
     transform: translateX(0);
@@ -2774,6 +2776,7 @@ a:hover {
 [data-displace]:hover > span > span:last-child {
   transform: translateY(0);
 }
+
 [data-displace] > a {
   display: block;
   height: 100%;
@@ -2975,12 +2978,12 @@ a:hover {
           justify-content: end;
           align-items: end;
           padding-right: 2rem;
-
+ 
           color: white;
         }
 
         #faq .highlights h4{
-          font-size:2.2vw;
+          font-size:2.2vw; 
         }
 
         .cell-6.mtxt{
@@ -3065,10 +3068,16 @@ a:hover {
       width: auto;
       object-fit: contain;
     }
-
     @media screen and (min-width:1900px) {
       .contractCopy{
         font-size: 50px;
+      }
+    }
+
+    @media screen and (min-width:1500px) {
+      #faq .highlights h4{
+        font-size:2.2vw;
+        letter-spacing:2px;
       }
     }
     @media screen and (max-width:1024px) {
@@ -3162,6 +3171,11 @@ a:hover {
       
       #promo .image{ 
         width: 70%;
+      }
+
+      #faq .highlights h4{
+        font-size:4vw;
+        letter-spacing: 1px; 
       }
 
       /* contract */
