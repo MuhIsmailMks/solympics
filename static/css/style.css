@@ -1744,16 +1744,16 @@ a:hover {
 }
 .ball {
   animation: bounce 2s ease infinite;
-  left: 16%;
-  top: 10%;
-  width: 19.4%;
+  left: -10%;
+  top: 0%;
+  width: 39.4%;
   z-index: 2;
 }
 .podium {
   animation: wiggle 2s ease infinite;
-  right: 7%;
-  top: 11.5%;
-  width: 19.4%;
+  right: -6%;
+  top: 0%;
+  width: 39.4%;
 }
 .ball,
 .podium,
