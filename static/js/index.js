@@ -70,6 +70,7 @@ let controller = new ScrollMagic.Controller();
 const animations = [
     { selector: ".snibbu_shell", duration: 2000, x: 100},  
     { selector: ".faq_image", duration: 4000, x: 100},  
+    { selector: ".token_images", duration: 4000, x: -100},  
     // { selector: ".trackim", duration: 3000, rotate: 45 },  
 ];
 
