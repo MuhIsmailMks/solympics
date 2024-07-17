@@ -1527,7 +1527,9 @@ a:hover {
     width: 64px;
   }
 }
-
+.hero{
+  margin-top:130px;
+}
  .hero > figure {
   display: flex;
   flex-flow: row wrap;
