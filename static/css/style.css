@@ -3029,7 +3029,33 @@ a:hover {
       display: flex;
       align-items: center;
       justify-content: center;
+      gap:1rem;
     }
+
+    .logo_text{
+      position: relative;
+    }
+    
+   .logo_text span{ 
+    position: relative;
+    z-index: 2;
+    background: linear-gradient(180deg, #FFD803 0%, #FB870C 100%);
+
+    -webkit-text-fill-color: #0000;
+    -webkit-text-stroke-width: 4px;
+    -webkit-text-stroke-color: #DB4C06;
+    -webkit-background-clip: text; 
+
+    font-size: 4rem;
+   }
+
+   .logo_text p{ 
+    position: absolute;
+    top: 5px;
+    color: #FC8A0D;
+    font-size: 4rem;
+   }
+
 
     .footer_logo img{
       height: 100px;
@@ -3129,9 +3155,7 @@ a:hover {
       /* treasure */
       #promo .window .body { 
         border-radius:0 0 20px 20px;
-      }
- 
-
+      } 
       
       #promo .image{ 
         width: 70%;
@@ -3146,6 +3170,11 @@ a:hover {
       /* footer */  
       .footer_logo img{
         height: 50px; 
+      }
+
+      .logo_text p,
+      .logo_text span{
+        font-size:10vw;
       }
 
     }
