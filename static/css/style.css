@@ -716,6 +716,9 @@ body {
   margin-right: auto;
   max-width: var(--global-width);
  
+  display:flex;
+  flex-direction:column;
+  align-items:center;
 }
 .global_padding{
  padding: 0 var(--global-padding);
@@ -1525,7 +1528,7 @@ a:hover {
   }
 }
 
-/* .hero > figure {
+ .hero > figure {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -1572,7 +1575,7 @@ a:hover {
     calc(var(--large-radius) - 2px);
   display: block;
   width: 100%;
-} */
+}  
 
 .foreground .glare {
   pointer-events: none;
