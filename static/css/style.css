@@ -1186,10 +1186,7 @@ a:hover {
   align-items: center;
   display: flex;
   flex-flow: column;
-}
-.footer .align-center > * {
-  margin-top: var(--v-medium);
-}
+} 
 .footer .socials {
   margin-bottom: calc(var(--gutter) / 2);
 }
@@ -3030,7 +3027,12 @@ a:hover {
       align-items: center;
       justify-content: center;
       gap:1rem;
+      margin-top:1.85rem;
     }
+
+    footer .info{
+      font-size: 2rem;
+     }
 
     .logo_text{
       position: relative;
@@ -3171,6 +3173,10 @@ a:hover {
       .footer_logo img{
         height: 50px; 
       }
+
+      footer .info{
+        font-size: 1.35rem;
+       }
 
       .logo_text p,
       .logo_text span{
