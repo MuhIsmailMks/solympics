@@ -1827,6 +1827,7 @@ a:hover {
 }
 .hero .heading .ah {
   width: 100%;
+  max-width:1700px;
 }
 .hero h2 {
   font-size: 10.6vw;
@@ -1932,6 +1933,7 @@ a:hover {
 #about {
   position: relative;
   z-index: 1;
+  max-width:2200px
 }
 #about .txt-cnt {
   margin-bottom: var(--v-medium);
@@ -3032,6 +3034,10 @@ a:hover {
       font-size: 30px;
       padding: 0;
     } 
+
+    .faq_container {
+      max-width: 2000px;
+    }
     
     /* footer */
     .footer_logo{
@@ -3081,14 +3087,18 @@ a:hover {
       .contractCopy{
         font-size: 50px;
       }
+      #faq .highlights h4{
+        font-size:2.5rem !important;
+      }
     }
 
     @media screen and (min-width:1500px) {
       #faq .highlights h4{
-        font-size:2.2vw;
+        /* font-size:2.2vw; */
         letter-spacing:2px;
       }
     }
+
     @media screen and (max-width:1024px) {
 
       /* about */
