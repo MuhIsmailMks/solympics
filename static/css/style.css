@@ -2956,7 +2956,7 @@ a:hover {
     margin:0 auto;
    }
 
-   .about_content_container  .content img{
+   .about_content_container  .content .about_image{
      width: 40vw;
      max-width:600px;
      height: auto;
@@ -2964,7 +2964,7 @@ a:hover {
 
      position: absolute;
 
-     left: -10%;
+     left: 0%;
    }
 
    #about .btn.primary{
@@ -2991,11 +2991,14 @@ a:hover {
        padding-top:50px;
        }
 
-       .about_content_container  .content img{
+       .about_content_container  .content .about_image{
          width: 80vw; 
-         position: relative;
-         left: -10%; 
+         position: relative; 
        }
+
+       .crab{
+        width: 150px !important; 
+      }
 
        .about_content_container  .content .about_text{ 
          align-items: center; 
@@ -3491,4 +3494,59 @@ a:hover {
     transform: rotate(0.05deg);
 }
 }
+
+/* about animation */
+.snibbu_shell{
+  position: relative;
+} 
+
+.crab{
+  width: 200px;
+  height: auto;
+  position: absolute;
+
+  bottom: 0;
+  left: 0;
+  animation: walk 5s infinite linear;
+}
+
+.crab img{
+  width: 100%;
+  object-fit: contain;
+
+  animation: shake 1.5s;
+  animation-iteration-count: infinite;  
+}
+
+@keyframes walk {
+    0% {
+      left: -50px;
+      transform: translateY(0%) scaleX(1);
+    }
+    50% {
+      left: calc(100% - 50px);
+      transform: translateY(0%) scaleX(1);
+    }
+    50.01% {
+      transform: translateY(0%) scaleX(-1);
+    }
+    100% {
+      left: -50px;
+      transform: translateY(0%) scaleX(-1);
+    }
+}
+
+@keyframes shake {
+    0% { transform: translateY(0); }
+    10% { transform: translateY(-10px); }
+    20% { transform: translateY(10px); }
+    30% { transform: translateY(-10px); }
+    40% { transform: translateY(10px); }
+    50% { transform: translateY(-10px); }
+    60% { transform: translateY(10px); }
+    70% { transform: translateY(-10px); }
+    80% { transform: translateY(10px); }
+    90% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+  }
 
