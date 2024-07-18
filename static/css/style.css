@@ -290,8 +290,7 @@ h6 {
   -webkit-text-fill-color: #0000;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: var(--negative);
-  background: #ff7be7;
-  /* background: linear-gradient(180deg, #ff7be7 0, #f8e731); */
+  background: #ff7be7; 
   background: linear-gradient(
     8.99deg,
     #ffdf01 0%,
@@ -701,8 +700,7 @@ html {
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: var(--global-body-bg);
-  /* color:  #FFAB03;  */
+  background-color: var(--global-body-bg); 
 
   color: var(--negative);
   display: block;
@@ -733,8 +731,7 @@ body {
 aside {
   z-index: -1;
 }
-.texture {
-  /* mix-blend-mode: color-burn; */
+.texture { 
   display: block;
   height: 100vh;
   left: 0;
@@ -1346,13 +1343,11 @@ a:hover {
 }
 .navigation.sticky {
   position: fixed;
-  transition:.2s ease-in;
-  /* top: 0 !important; */
+  transition:.2s ease-in; 
 }
 .submenu {
   background: var(--grad);
-  border-bottom: 5px solid var(--negative);
-  /* color:black; */
+  border-bottom: 5px solid var(--negative); 
   color: var(--primary);
   padding-top: var(--v-medium);
   pointer-events: none;
@@ -2972,10 +2967,7 @@ a:hover {
     border-radius: 30px;
     margin-bottom:2rem;
   }
-
-  #about .btn.hollow.primary{
-    /* background:var(--grad); */
-  }
+ 
 
    
    @media screen and (max-width:1024px) {
