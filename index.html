@@ -11,12 +11,64 @@
 <body>
 
   <style> 
+  
+  .texture .bg{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  .texture .bg img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+
+    position: absolute;
+    animation: bg_animation 20s linear infinite;
+    opacity: .1;
+  }
+
+  .texture .bg::after {
+  content:'';  
+  display: block;
+  height: 100vh;
+  left: 0;
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 0;
+  opacity: 1;
+  backdrop-filter: blur(3px); 
+}
+
+  @keyframes bg_animation {
+    0%,100%  {
+      top: -40%; 
+    }
+    50% {
+      top: 0%; 
+    }  
+}
+
 
   </style>
   
 
     <main id="root">
-        <aside class="texture"></aside>
+        <aside class="texture">
+          <div class="bg">
+            <img src="./static/media/bg.jpg" alt="">
+          </div>
+        </aside>
 
         <nav class="subnav  spaceless fw stripe exclude">
           <div class="fw spaceless">

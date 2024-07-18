@@ -776,7 +776,7 @@ aside {
     background-position: 0% 50%;
   }
 }
-.texture:before {
+/* .texture:before {
   animation: patternbody2 30s linear infinite;
   background-image: url("../media/bg.jpg"); 
 
@@ -792,9 +792,9 @@ aside {
   width: 100vw;
   z-index: -1; 
   opacity: 0.1;
-}
+} */
 
-.texture::after {
+/* .texture::after {
   content:'';  
   display: block;
   height: 100vh;
@@ -806,7 +806,7 @@ aside {
   z-index: 0;
   opacity: 1;
   backdrop-filter: blur(3px); 
-}
+} */
 
 
 #root > :not(.exclude):not(.fw) {
