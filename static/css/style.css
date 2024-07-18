@@ -776,7 +776,7 @@ aside {
     background-position: 0% 50%;
   }
 }
-/* .texture:before {
+.texture:before {
   animation: patternbody2 30s linear infinite;
   background-image: url("../media/bg.jpg"); 
 
@@ -792,9 +792,9 @@ aside {
   width: 100vw;
   z-index: -1; 
   opacity: 0.1;
-} */
+}
 
-/* .texture::after {
+.texture::after {
   content:'';  
   display: block;
   height: 100vh;
@@ -806,7 +806,67 @@ aside {
   z-index: 0;
   opacity: 1;
   backdrop-filter: blur(3px); 
-} */
+}
+
+  
+.texture .bg{
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  z-index: 1;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.texture .bg img{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+
+  position: absolute;
+  animation: bg_animation 20s linear infinite;
+  opacity: .1;
+}
+
+.texture .bg::after {
+    content:'';  
+    display: block;
+    height: 100vh;
+    left: 0;
+    pointer-events: none;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 0;
+    opacity: 1;
+    backdrop-filter: blur(3px); 
+}
+
+@keyframes bg_animation {
+  0%,100%  {
+    top: -40%; 
+  }
+  50% {
+    top: 0%; 
+  }  
+}
+
+@media screen and (min-width:1024px) {
+  .texture:before,
+  .texture::after{
+    display: none;
+  }
+}
+@media screen and (max-width:1024px) {
+  .texture .bg{ 
+     display: none;
+   }
+}
 
 
 #root > :not(.exclude):not(.fw) {
