@@ -1316,7 +1316,8 @@ a:hover {
 }
 .navigation.sticky {
   position: fixed;
-  top: 0 !important;
+  transition:.2s ease-in;
+  /* top: 0 !important; */
 }
 .submenu {
   background: var(--grad);
@@ -1813,7 +1814,7 @@ a:hover {
 .hero .heading {
   margin-left: auto;
   margin-right: auto;
-  margin-top: -25vh;
+  margin-top: -4vh;
   position: relative;
   text-align: center;
   width: 100%;
