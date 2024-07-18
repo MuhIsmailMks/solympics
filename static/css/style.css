@@ -1719,6 +1719,7 @@ a:hover {
 .ball,
 .flower,
 .chart,
+.flight,
 .sun {
   display: block;
   position: absolute;
@@ -1727,8 +1728,11 @@ a:hover {
   z-index:11;
 }
 .ball img,
+.flight img,
+.heroes2 img,
 .chart img {
   transition: all 0.2s ease-in-out;
+  object-fit:contain;
 }
 .ball:hover,
 .chart:hover {
@@ -1740,24 +1744,81 @@ a:hover {
   transition: all 0.3s ease-in-out;
 }
 .ball img,
+.flight img,
+.heroes2 img,
 .chart img {
   width: 100%;
 }
+
+/* heroes 1 */
 .ball {
   animation: bounce 2s ease infinite;
   left: -10%;
   top: 0%;
-  width: 39.4%;
+  width: 45.4%;
   z-index: 2;
+}
+.flight{
+  animation: floating_animation 12s ease infinite;
+  top: 35%;
+  width: 25.4%;
+  z-index: 1;
+}
+.flight._1{
+  left: 10%;
+}
+.flight._2{
+  right: 14%;
 }
 .chart {
   animation: wiggle 2s ease infinite;
   right: -6%;
   top: -13%;
-  width: 39.4%;
+  width: 50.4%;
 }
+
+/* heroes 2 */
+.heroes_right, 
+.heroes_left, 
+.heroes_flag{
+  display: block;
+  position: absolute;
+}
+
+.heroes_center {  
+  width: 80%;
+  z-index: 1;
+  position: relative;
+
+  margin-top:100px;
+}
+
+.heroes_flag {  
+  width: 50%;
+  z-index: 0;
+  bottom:15vw; 
+  
+  /* transform-origin: 50% 4px;
+  animation: flag 3s infinite cubic-bezier(0.5,300,0.5,-300); */
+}
+
+.heroes_left {  
+  width: 30%;
+  z-index: 2;
+  bottom:5vw; 
+  left:0%
+}
+
+.heroes_right {  
+  width: 40%;
+  z-index: 2;
+  bottom:5vw; 
+  right:0%
+}
+
 .ball,
 .chart,
+.flight,
 .sun {
   pointer-events: auto;
 }
@@ -1789,21 +1850,7 @@ a:hover {
 }
 .sun:hover .alert {
   transform: translate(-90%, -40%) scale(1);
-}
-.sun {
-  animation: wiggle 2s ease 1s infinite;
-  right: 18%;
-  top: 2.5%;
-  width: 13.1%;
-  z-index: -1;
-}
-.sun img {
-  transition: all 0.2s ease-in-out;
-}
-.sun:hover img {
-  transform: scale(0.85);
-  transition: all 0.3s ease-in-out;
-}
+} 
 .flower {
   animation: flower 6s linear infinite;
   pointer-events: none;
@@ -1819,6 +1866,9 @@ a:hover {
   text-align: center;
   width: 100%;
   z-index: 3;
+  
+  display: flex;
+  justify-content: center;
 }
 .hero .gradfill {
   margin-bottom: 0;
@@ -3363,3 +3413,22 @@ a:hover {
     transform: scale(1);
   }
 }
+ 
+@keyframes floating_animation {
+  0% {
+    transform: translateY(0%);
+  }
+  50% { 
+    transform: translateY(10%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes flag {
+  100% {
+    transform: rotate(0.05deg);
+}
+}
+
