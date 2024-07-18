@@ -770,13 +770,10 @@ aside {
 }
 .texture:before {
   animation: patternbody 60s linear infinite;
-  background-image: url("../media/bg.jpg");
-  /* background-image: url("../media/bg_texture.svg"); */
-  /* background-color: #ffffff; */
+  background-image: url("../media/bg.jpg"); 
 
   background-attachment: fixed;
-  background-size: cover;
-  background-size: cover;
+  background-size: cover; 
   content: "";
   display: block;
   height: 100vh;
@@ -785,9 +782,24 @@ aside {
   position: fixed;
   top: 0;
   width: 100vw;
-  z-index: -1;
+  z-index: -1; 
   opacity: 0.1;
 }
+
+.texture::after {
+  content:'';  
+  display: block;
+  height: 100vh;
+  left: 0;
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 0;
+  opacity: 1;
+  backdrop-filter: blur(10px); 
+}
+
 
 #root > :not(.exclude):not(.fw) {
   width: 100%;
