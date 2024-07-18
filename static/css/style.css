@@ -1523,7 +1523,9 @@ a:hover {
     margin-bottom: var(--gutter);
   }
   .navigation .socialblocks {
-    margin-top: var(--v-small);
+    margin: var(--v-small) auto 0;
+    justify-content:center;
+    width:70%;  
   }
 }
 @media (min-width: 1024px) {
@@ -2984,8 +2986,9 @@ a:hover {
      .about_content_container  .content{ 
        height: auto; 
        justify-content: center;
-       flex-direction: column;
+       flex-direction: column-reverse;
        margin-bottom:0;
+       padding-top:50px;
        }
 
        .about_content_container  .content img{
