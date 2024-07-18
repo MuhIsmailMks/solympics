@@ -998,6 +998,10 @@ a:hover {
   gap: var(--gutter);
   justify-content: flex-start;
 }
+.socialblocks span{
+  font-size: 15px;
+  padding-bottom: .25rem;
+}
 .socblock {
   background-color: var(--blue1);
   border: 2px solid var(--border);
@@ -1930,7 +1934,7 @@ a:hover {
 }
 @media (max-width: 1023px) {
   .hero .heading {
-    margin-top: -0.5vh;
+    margin-top: -15.5vh;
   }
   .ball .alert,
   .chart .alert,
@@ -3044,8 +3048,7 @@ a:hover {
         object-fit: contain;
       }
 
-      /* TEASURE */ 
-
+      /* TEASURE */  
        .treasure .window-wrap{
         height: 400px;
         width:80%;
@@ -3168,6 +3171,7 @@ a:hover {
     } 
 
     .faq_container {
+      margin:100px auto;
       max-width: 2000px;
     }
     
@@ -3178,6 +3182,15 @@ a:hover {
       justify-content: center;
       gap:1rem;
       margin-top:1.85rem;
+    }
+
+ 
+
+    .about_footer{
+      font-size: 1rem;
+      width: 60% !important;
+      margin:1rem auto 0;
+      text-align: center;
     }
 
     footer .info{
@@ -3302,12 +3315,17 @@ a:hover {
       #about .btn.primary{
         font-size: 30px;
         border-radius: 20px;
-        margin-bottom:0rem;
+        margin:0rem;
+      }
+
+      /* footer */
+      .about_footer{ 
+        width: 90% !important; 
       }
 
       /* tokenomics */
       .tokenomics{ 
-        height:160vw;
+        height:130vw;
         margin-top: 3rem;
       }
 
@@ -3341,6 +3359,11 @@ a:hover {
 
       #promo .image{ 
         width: 70%;
+      }
+
+      /* faq */
+      .faq_container {
+        margin:0px !important; 
       }
 
       #faq .highlights h4{
