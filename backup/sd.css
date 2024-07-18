@@ -4476,3 +4476,93 @@ a:hover {
   top: 0;
   width: 100%;
 }
+
+
+
+@media (max-width: 600px){
+  .quicklinks .socials{
+    padding:.55rem;
+    border-radius:10px;
+  } 
+
+  .navigation .logo{
+    display:flex;
+    justify-content:center;
+    width: 40vw;
+  }
+
+  .navigation .logo:before{
+    background-image: url(../media/logo.png); 
+    background-size: contain; 
+    height: 100%; 
+    width: 80%;
+  }
+
+  /* about */
+  #about .btn.primary{
+    font-size: 30px;
+    border-radius: 20px;
+    margin-bottom:0rem;
+  }
+
+  /* tokenomics */
+  .tokenomics{ 
+    height:160vw;
+    margin-top: 3rem;
+  }
+
+  .shadow_text{ 
+    top: 5px; 
+  }
+
+  .token_images { 
+    width: 100%; 
+  }
+ 
+
+
+  /* treasure */
+  #promo .window .body { 
+    border-radius:0 0 20px 20px;
+    height: 82.4%;
+  } 
+    
+
+  #promo .image{ 
+    width: 70%;
+  }
+
+  #faq .highlights h4{
+    font-size:4vw;
+    letter-spacing: 1px; 
+  }
+
+  #faq .highlights p{
+    font-size:3vw;
+  }
+
+  #promo .btn.huge{
+    width:100%; 
+   }
+
+  /* contract */
+  .contract_address{ 
+    height: 70px; 
+    margin-bottom:20px;
+  }
+
+  /* footer */  
+  .footer_logo img{
+    height: 50px; 
+  }
+
+  footer .info{
+    font-size: 1.35rem;
+   }
+
+  .logo_text p,
+  .logo_text span{
+    font-size:9vw;
+  }
+
+}
