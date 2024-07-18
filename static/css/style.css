@@ -586,6 +586,14 @@ button:hover {
     transform: scale(1.5);
   }
 }
+@keyframes patternbody2 {
+  0%,100%{
+    transform: scale(1) translateY(0%);
+  }
+  50% {
+    transform: scale(2) translateY(5%);
+  }
+}
 @keyframes spinner {
   0% {
     transform: rotate(1turn) scale(6);
@@ -769,7 +777,7 @@ aside {
   }
 }
 .texture:before {
-  animation: patternbody 60s linear infinite;
+  animation: patternbody2 30s linear infinite;
   background-image: url("../media/bg.jpg"); 
 
   background-attachment: fixed;
@@ -797,7 +805,7 @@ aside {
   width: 100vw;
   z-index: 0;
   opacity: 1;
-  backdrop-filter: blur(10px); 
+  backdrop-filter: blur(3px); 
 }
 
 
