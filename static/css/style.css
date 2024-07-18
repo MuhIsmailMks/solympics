@@ -3376,6 +3376,9 @@ a:hover {
 
 
     @media (max-width: 600px){
+      .submenu{
+        padding-bottom:1rem
+      }
       .quicklinks .socials{
         padding:.55rem;
         border-radius:10px;
@@ -3412,6 +3415,10 @@ a:hover {
         margin-top: 3rem;
       }
 
+      #promo .cnt-txt p{ 
+        margin-bottom:10px; 
+       }
+
       .shadow_text{ 
         top: 5px; 
       }
@@ -3442,7 +3449,11 @@ a:hover {
 
      #promo .cnt-txt .find{
       font-size:3vw;  
-      right:10vw;
+      position:relative;
+      margin:.5rem 0;
+      right:auto;
+      bottom:auto;
+      /* right:10vw; */
      }
 
       #promo .image{ 
@@ -3454,9 +3465,14 @@ a:hover {
         margin:0px !important; 
       }
 
+      .highlights .highlight button{
+        gap:1rem;
+      }
+      
       #faq .highlights h4{
         font-size:4vw;
         letter-spacing: 1px; 
+        text-align:center
       }
 
       #faq .highlights p{
