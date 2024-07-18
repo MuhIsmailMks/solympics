@@ -2974,7 +2974,7 @@ a:hover {
   }
 
   #about .btn.hollow.primary{
-    background:white;
+    /* background:var(--grad); */
   }
 
    
