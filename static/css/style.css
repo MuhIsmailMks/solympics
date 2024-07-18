@@ -993,6 +993,7 @@ a:hover {
 .socialblocks {
   align-items: center;
   display: flex;
+  flex-wrap:wrap;
   flex-flow: row wrap;
   gap: var(--gutter);
   justify-content: flex-start;
@@ -1798,22 +1799,24 @@ a:hover {
   z-index: 0;
   bottom:15vw; 
   
-  /* transform-origin: 50% 4px;
-  animation: flag 3s infinite cubic-bezier(0.5,300,0.5,-300); */
+  transform-origin: 50% 100%; 
+  animation: flag 3s infinite cubic-bezier(0.5,300,0.5,-300);
 }
 
 .heroes_left {  
   width: 30%;
   z-index: 2;
   bottom:5vw; 
-  left:0%
+  left:0%;
+  animation: bounce 2s ease infinite;
 }
 
 .heroes_right {  
   width: 40%;
   z-index: 2;
   bottom:5vw; 
-  right:0%
+  right:0%;
+  animation: bounce 2s ease infinite;
 }
 
 .ball,
