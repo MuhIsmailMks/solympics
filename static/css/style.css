@@ -1039,10 +1039,21 @@ a:hover {
 .socblock:first-child {
   transform: rotate(8deg);
 }
-.socblock:first-child:hover {
+.socblock:nth-child(2) {
+  transform: rotate(-8deg);
+}
+.socblock:nth-child(3) {
+  transform: rotate(5deg);
+}
+.socblock:nth-child(4) {
+  transform: rotate(-3deg);
+}
+.socblock:hover {
   transform: rotate(3deg) scale(1.05);
   transition: all 0.3s ease-in-out;
 }
+
+
 .socblock .telegram figure {
   background: linear-gradient(45deg, #83d4fb, #ffecf6);
 }
@@ -1055,6 +1066,20 @@ a:hover {
 .socblock:hover .twitter figure {
   background: linear-gradient(45deg, #db5dff, #c4e7da 75%);
 }
+.socblock .dex figure {
+  background: linear-gradient(45deg, #0141A0, #c4e7da);
+}
+.socblock:hover .dex figure {
+  background: linear-gradient(45deg, #0141A0, #c4e7da 75%);
+}
+.socblock .solscan figure {
+  background: linear-gradient(45deg, #D458FF, #c4e7da);
+}
+.socblock:hover .solscan figure {
+  background: linear-gradient(45deg, #D458FF, #c4e7da 75%);
+}
+
+
 .socblock figure [data-ico] {
   display: block;
   left: 50%;
